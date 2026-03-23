@@ -54,7 +54,7 @@ $safe_name = substr($safe_name, 0, 60);
 $filename  = $safe_name . '-' . uniqid() . '.' . $ext;
 
 $target_path = $target_dir . $filename;
-$url = '/mws/apollotech/storage/uploads/' . $year_month . $filename;
+$url = SITE . '/storage/uploads/' . $year_month . $filename;
 $size = $file['size'];
 
 // Get image dimensions
@@ -74,7 +74,7 @@ $webp_path = $target_path;
 if (function_exists('imagewebp') && $size > 200000 && in_array($mime, ['image/jpeg','image/jpg','image/png'])) {
     $webp_filename = pathinfo($filename, PATHINFO_FILENAME) . '.webp';
     $webp_path     = $target_dir . $webp_filename;
-    $webp_url      = '/mws/apollotech/storage/uploads/' . $year_month . $webp_filename;
+    $webp_url      = SITE . '/storage/uploads/' . $year_month . $webp_filename;
     $img = null;
     if ($mime === 'image/png') $img = @imagecreatefrompng($target_path);
     else $img = @imagecreatefromjpeg($target_path);

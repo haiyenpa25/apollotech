@@ -31,7 +31,7 @@ if (!$pdo) {
         $items[] = [
             'id'            => 0,
             'filename'      => $fn,
-            'url'           => '/mws/apollotech/assets/images/solutions/' . $fn,
+            'url'           => SITE . '/assets/images/solutions/' . $fn,
             'size'          => filesize($f),
             'width'         => 0,
             'height'        => 0,
