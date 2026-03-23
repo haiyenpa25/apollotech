@@ -8,8 +8,8 @@ require_once __DIR__ . '/../admin/db.php';
  * Get active language (from session or default 'vi')
  */
 function get_lang(): string {
-    return in_array($_SESSION['site_lang'] ?? 'vi', ['vi','en','ko','ja'])
-        ? $_SESSION['site_lang'] : 'vi';
+    $lang = $_SESSION['site_lang'] ?? 'vi';
+    return in_array($lang, ['vi','en','ko','ja']) ? $lang : 'vi';
 }
 
 /**
