@@ -4,6 +4,15 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 require_once __DIR__ . '/../admin/db.php';
 
+if (!defined('SITE')) {
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $host = $_SERVER['HTTP_HOST'];
+    $doc_root = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
+    $app_dir  = str_replace('\\', '/', dirname(__DIR__));
+    $folder   = str_replace($doc_root, '', $app_dir);
+    define('SITE', $protocol . $host . rtrim($folder, '/'));
+}
+
 /**
  * Get active language (from session or default 'vi')
  */
