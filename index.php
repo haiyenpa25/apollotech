@@ -100,26 +100,30 @@ include 'includes/header.php';
             <div class="car-outer">
                 <div class="car-track" id="carTrack">
                     <?php
-                    $projects = [
-                        ['name'=>'TTC Dốc Lết',            'tag'=>'Nghỉ dưỡng', 'tags2'=>'ICT · AV · An ninh',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-01.jpg'],
-                        ['name'=>'Chung cư Huyền Điệp',    'tag'=>'Căn hộ',     'tags2'=>'ICT · Cơ điện · IoT',        'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg'],
-                        ['name'=>'Hyatt Regency Nha Trang', 'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-03.jpg'],
-                        ['name'=>'Đại học Hùng Vương',      'tag'=>'Giáo dục',  'tags2'=>'ICT · Viễn thông · Phần mềm','img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-04.jpg'],
-                        ['name'=>'Bệnh viện Đắk Nông',      'tag'=>'Bệnh viện', 'tags2'=>'ICT · An ninh · Cơ điện',    'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-05.jpg'],
-                        ['name'=>'Mekong Golf',             'tag'=>'Sân Golf',  'tags2'=>'AV · An ninh · IoT',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-06.jpg'],
-                        ['name'=>'Luvista Quy Nhơn',        'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · Cơ điện',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-07.jpg'],
-                        ['name'=>'Menas Zone Vỹ Dạ',        'tag'=>'Mixed-use', 'tags2'=>'An ninh · ICT · AV',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-08.jpg'],
-                        ['name'=>'Republic Plaza',          'tag'=>'Văn phòng', 'tags2'=>'ICT · Viễn thông · Cơ điện', 'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg'],
-                        ['name'=>"L'alya Ninh Vân Bay",     'tag'=>'Resort',    'tags2'=>'AV · ICT · An ninh',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-10.jpg'],
-                        ['name'=>'TUI Blue Tuy Hòa',        'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-11.jpg'],
-                        ['name'=>'TUI Blue Nha Trang',      'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-12.jpg'],
-                        ['name'=>'Chuỗi nhà hàng Byblos',  'tag'=>'F&B',       'tags2'=>'AV · An ninh · IoT',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg'],
-                        ['name'=>'Chuỗi nhà hàng Texas',   'tag'=>'F&B',       'tags2'=>'AV · An ninh · IoT',         'img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-14.jpg'],
+                    $proj_defaults = [
+                        ['name'=>'TTC Dốc Lết',            'tag'=>'Nghỉ dưỡng', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_1',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-01.jpg'],
+                        ['name'=>'Chung cư Huyền Điệp',    'tag'=>'Căn hộ',     'tags2'=>'ICT · Cơ điện · IoT',        'key'=>'proj_2',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg'],
+                        ['name'=>'Hyatt Regency Nha Trang', 'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_3',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-03.jpg'],
+                        ['name'=>'Đại học Hùng Vương',      'tag'=>'Giáo dục',  'tags2'=>'ICT · Viễn thông · Phần mềm','key'=>'proj_4',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-04.jpg'],
+                        ['name'=>'Bệnh viện Đắk Nông',      'tag'=>'Bệnh viện', 'tags2'=>'ICT · An ninh · Cơ điện',    'key'=>'proj_5',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-05.jpg'],
+                        ['name'=>'Mekong Golf',             'tag'=>'Sân Golf',  'tags2'=>'AV · An ninh · IoT',         'key'=>'proj_6',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-06.jpg'],
+                        ['name'=>'Luvista Quy Nhơn',        'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · Cơ điện',         'key'=>'proj_7',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-07.jpg'],
+                        ['name'=>'Menas Zone Vỹ Dạ',        'tag'=>'Mixed-use', 'tags2'=>'An ninh · ICT · AV',         'key'=>'proj_8',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-08.jpg'],
+                        ['name'=>'Republic Plaza',          'tag'=>'Văn phòng', 'tags2'=>'ICT · Viễn thông · Cơ điện', 'key'=>'proj_9',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg'],
+                        ['name'=>"L'alya Ninh Vân Bay",     'tag'=>'Resort',    'tags2'=>'AV · ICT · An ninh',         'key'=>'proj_10', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-10.jpg'],
+                        ['name'=>'TUI Blue Tuy Hòa',        'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_11', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-11.jpg'],
+                        ['name'=>'TUI Blue Nha Trang',      'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_12', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-12.jpg'],
+                        ['name'=>'Chuỗi nhà hàng Byblos',  'tag'=>'F&B',       'tags2'=>'AV · An ninh · IoT',         'key'=>'proj_13', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg'],
+                        ['name'=>'Chuỗi nhà hàng Texas',   'tag'=>'F&B',       'tags2'=>'AV · An ninh · IoT',         'key'=>'proj_14', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-14.jpg'],
                     ];
-                    foreach($projects as $p): ?>
+                    foreach($proj_defaults as $p):
+                        $p['img'] = get_content('index', $p['key'].'_img', $p['def_img']);
+                        $p['name'] = get_content('index', $p['key'].'_name', $p['name']);
+                        $p['tag'] = get_content('index', $p['key'].'_tag', $p['tag']);
+                    ?>
                     <div class="proj-slide">
-                        <span class="proj-tag"><?php echo htmlspecialchars($p['tag']); ?></span>
-                        <img src="<?php echo $p['img']; ?>" alt="<?php echo htmlspecialchars($p['name']); ?>">
+                        <span class="proj-tag" <?php echo cms_attr('index', $p['key'].'_tag'); ?>><?php echo htmlspecialchars($p['tag']); ?></span>
+                        <img src="<?php echo $p['img']; ?>" <?php echo cms_attr('index', $p['key'].'_img'); ?> alt="<?php echo htmlspecialchars($p['name']); ?>">
                         <div class="proj-info">
                             <h4><?php echo htmlspecialchars($p['name']); ?></h4>
                             <span><i class="fas fa-layer-group" style="font-size:.65rem;"></i> <?php echo htmlspecialchars($p['tags2']); ?></span>
@@ -141,7 +145,8 @@ include 'includes/header.php';
         <div class="two-col">
             <!-- Visual -->
             <div class="visual-wrap">
-                <img src="<?php echo 'https://apollotech.vn/wp-content/uploads/2026/01/1X_Hosting_Illustration_03.png'; ?>"
+                <img src="<?php echo get_content('index', 'sol_preview_img', 'https://apollotech.vn/wp-content/uploads/2026/01/1X_Hosting_Illustration_03.png'); ?>"
+                     <?php echo cms_attr('index', 'sol_preview_img'); ?>
                      alt="Apollo ICT Solutions"
                      onerror="this.src='https://placehold.co/520x440/EEF5FF/0066CC?text=Apollo+Solutions'">
             </div>
