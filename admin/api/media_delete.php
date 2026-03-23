@@ -18,14 +18,15 @@ if (!$id) { http_response_code(400); echo json_encode(['error' => 'Invalid id'])
 $pdo = get_db();
 if (!$pdo) { http_response_code(503); echo json_encode(['error' => 'DB not available']); exit; }
 
-$stmt = $pdo->prepare("SELECT path FROM media_files WHERE id = ?");
+$stmt = $pdo->prepare("SELECT filepath FROM media_files WHERE id = ?");
 $stmt->execute([$id]);
 $row = $stmt->fetch();
 if (!$row) { http_response_code(404); echo json_encode(['error' => 'Not found']); exit; }
 
 // Delete physical file
-if (file_exists($row['path'])) {
-    @unlink($row['path']);
+$absolute_path = dirname(__DIR__, 2) . $row['filepath'];
+if (file_exists($absolute_path)) {
+    @unlink($absolute_path);
 }
 
 // Delete DB record

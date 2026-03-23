@@ -19,13 +19,14 @@ $pdo = get_db();
 if (!$pdo) { http_response_code(503); echo json_encode(['error' => 'DB not available']); exit; }
 
 $placeholders = implode(',', array_fill(0, count($ids), '?'));
-$stmt = $pdo->prepare("SELECT id, path FROM media_files WHERE id IN ($placeholders)");
+$stmt = $pdo->prepare("SELECT id, filepath as path FROM media_files WHERE id IN ($placeholders)");
 $stmt->execute(array_values($ids));
 $rows = $stmt->fetchAll();
 
 $deleted = 0;
 foreach ($rows as $row) {
-    if ($row['path'] && file_exists($row['path'])) @unlink($row['path']);
+    $absolute_path = dirname(__DIR__, 2) . $row['path'];
+    if ($row['path'] && file_exists($absolute_path)) @unlink($absolute_path);
     $deleted++;
 }
 

@@ -43,15 +43,15 @@ if (!$pdo) {
 }
 
 // DB available
-$where = $search ? "WHERE filename LIKE :s OR original_name LIKE :s" : "";
+$where = $search ? "WHERE filename LIKE :s OR filepath LIKE :s" : "";
 $params = $search ? [':s' => '%' . $search . '%'] : [];
 
 $total_stmt = $pdo->prepare("SELECT COUNT(*) FROM media_files $where");
 $total_stmt->execute($params);
 $total = (int) $total_stmt->fetchColumn();
 
-$stmt = $pdo->prepare("SELECT id, filename, original_name, url, size, width, height, alt_text, created_at
-    FROM media_files $where ORDER BY created_at DESC LIMIT $per_page OFFSET $offset");
+$stmt = $pdo->prepare("SELECT id, filename, filepath as original_name, url, filesize as size, 0 as width, 0 as height, alt_text, uploaded_at as created_at
+    FROM media_files $where ORDER BY uploaded_at DESC LIMIT $per_page OFFSET $offset");
 $stmt->execute($params);
 $files = $stmt->fetchAll();
 
