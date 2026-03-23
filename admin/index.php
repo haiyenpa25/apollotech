@@ -8,23 +8,23 @@ if (!is_admin()) {
 }
 
 $pages = [
-    ['name' => 'Trang Chủ', 'url' => '/index.php', 'icon' => 'fas fa-home'],
-    ['name' => 'Về Chúng Tôi', 'url' => '/gioi-thieu/index.html', 'icon' => 'fas fa-info-circle'], // Chưa có php
-    ['name' => 'Tin Tức', 'url' => '/tin-tuc.php', 'icon' => 'fas fa-newspaper'],
-    ['name' => 'Liên Hệ', 'url' => '/lien-he.php', 'icon' => 'fas fa-envelope'],
-    ['name' => 'Đối Tác', 'url' => '/doi-tac.php', 'icon' => 'fas fa-handshake'],
-    ['name' => 'Lĩnh Vực', 'url' => '/linh-vuc-hoat-dong.php', 'icon' => 'fas fa-briefcase'],
-    ['name' => 'Dự Án', 'url' => '/loai-hinh-du-an.php', 'icon' => 'fas fa-project-diagram']
+    ['name' => 'Trang Chủ', 'url' => SITE . '/index.php', 'icon' => 'fas fa-home'],
+    ['name' => 'Về Chúng Tôi', 'url' => SITE . '/gioi-thieu/index.html', 'icon' => 'fas fa-info-circle'], // Chưa có php
+    ['name' => 'Tin Tức', 'url' => SITE . '/tin-tuc.php', 'icon' => 'fas fa-newspaper'],
+    ['name' => 'Liên Hệ', 'url' => SITE . '/lien-he.php', 'icon' => 'fas fa-envelope'],
+    ['name' => 'Đối Tác', 'url' => SITE . '/doi-tac.php', 'icon' => 'fas fa-handshake'],
+    ['name' => 'Lĩnh Vực', 'url' => SITE . '/linh-vuc-hoat-dong.php', 'icon' => 'fas fa-briefcase'],
+    ['name' => 'Dự Án', 'url' => SITE . '/loai-hinh-du-an.php', 'icon' => 'fas fa-project-diagram']
 ];
 
 $solutions = [
-    ['name' => 'CNTT', 'url' => '/giai-phap-cong-nghe-thong-tin.php'],
-    ['name' => 'An Ninh', 'url' => '/giai-phap-an-ninh.php'],
-    ['name' => 'Thiết bị AV', 'url' => '/giai-phap-av.php'],
-    ['name' => 'Cơ Điện (M&E)', 'url' => '/he-thong-co-dien.php'],
-    ['name' => 'Viễn Thông', 'url' => '/he-thong-thong-tin-lien-lac.php'],
-    ['name' => 'Phần Mềm', 'url' => '/giai-phap-phan-mem.php'],
-    ['name' => 'IoT', 'url' => '/giai-phap-IoT.php'],
+    ['name' => 'CNTT', 'url' => SITE . '/giai-phap-cong-nghe-thong-tin.php'],
+    ['name' => 'An Ninh', 'url' => SITE . '/giai-phap-an-ninh.php'],
+    ['name' => 'Thiết bị AV', 'url' => SITE . '/giai-phap-av.php'],
+    ['name' => 'Cơ Điện (M&E)', 'url' => SITE . '/he-thong-co-dien.php'],
+    ['name' => 'Viễn Thông', 'url' => SITE . '/he-thong-thong-tin-lien-lac.php'],
+    ['name' => 'Phần Mềm', 'url' => SITE . '/giai-phap-phan-mem.php'],
+    ['name' => 'IoT', 'url' => SITE . '/giai-phap-IoT.php'],
 ];
 ?>
 <!DOCTYPE html>
