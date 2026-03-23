@@ -135,9 +135,9 @@ $f_logo_svg = function_exists('asset') ? asset('logo.svg') : '';
 
 <?php if (is_admin()): ?>
 <script>window.CMS_SITE = '<?php echo rtrim(SITE, '/'); ?>';</script>
-<script src="<?php echo SITE; ?>/assets/js/media-manager.js"></script>
-<script src="<?php echo SITE; ?>/assets/js/tinymce-editor.js"></script>
-<script src="<?php echo SITE; ?>/assets/js/inline-editor.js"></script>
+<script src="<?php echo SITE; ?>/assets/js/media-manager.js?v=<?php echo time(); ?>"></script>
+<script src="<?php echo SITE; ?>/assets/js/tinymce-editor.js?v=<?php echo time(); ?>"></script>
+<script src="<?php echo SITE; ?>/assets/js/inline-editor.js?v=<?php echo time(); ?>"></script>
 <?php endif; ?>
 
 <!-- ── Floating Language Switcher ─────────────────────────────── -->

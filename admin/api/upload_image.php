@@ -95,9 +95,10 @@ $media_id = null;
 $pdo = get_db();
 if ($pdo) {
     try {
-        $stmt = $pdo->prepare("INSERT INTO media_files (filename, original_name, path, url, mime_type, size, width, height)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->execute([$filename, $file['name'], $target_path, $url, $mime, $size, $width, $height]);
+        $stmt = $pdo->prepare("INSERT INTO media_files (filename, url, filepath, filesize, mime_type)
+            VALUES (?, ?, ?, ?, ?)");
+        $rel_path = '/storage/uploads/' . $year_month . $filename;
+        $stmt->execute([$filename, $url, $rel_path, $size, $mime]);
         $media_id = $pdo->lastInsertId();
     } catch (Exception $e) {
         // DB failed, but file is saved — still return success
