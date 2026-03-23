@@ -1,76 +1,60 @@
 ---
-description: Git Deploy — push từ local lên GitHub hoặc pull từ GitHub về server
+description: Git Deploy — Đẩy code lên GitHub hoặc Kéo code về máy tính/server
 ---
 // turbo-all
 
-## 🚀 FLOW 1: Push từ LOCAL lên GitHub (local → GitHub)
+## 🚀 FLOW 1: Đẩy code từ LOCAL lên GitHub (Local → GitHub)
 
-Chạy khi bạn đã chỉnh sửa code trên máy local và muốn đẩy lên GitHub.
-
-// turbo
-1. Kiểm tra trạng thái file thay đổi:
-```
-git -C c:\xampp\htdocs\mws\apollotech status
-```
+Chạy khi bạn đã chỉnh sửa code xong và muốn lưu lên GitHub.
 
 // turbo
-2. Stage tất cả file đã thay đổi:
-```
+1. Stage tất cả file đã thay đổi:
+```bash
 git -C c:\xampp\htdocs\mws\apollotech add -A
 ```
 
 // turbo
-3. Commit với message mô tả:
-```
-git -C c:\xampp\htdocs\mws\apollotech commit -m "update: sync local changes"
+2. Commit với message tự động:
+```bash
+git -C c:\xampp\htdocs\mws\apollotech commit -m "update: sync local changes $(get-date -format 'yyyy-MM-dd HH:mm')"
 ```
 
 // turbo
-4. Push lên GitHub branch main:
-```
+3. Đẩy lên GitHub:
+```bash
 git -C c:\xampp\htdocs\mws\apollotech push origin main
 ```
 
 ---
 
-## ⬇️ FLOW 2: Pull từ GitHub về SERVER (GitHub → server)
+## 💻 FLOW 2: Kéo code từ GitHub về MÁY TÍNH MỚI (GitHub → Local)
 
-Chạy trên server khi muốn cập nhật code mới từ GitHub về.
+Dùng khi bạn muốn lấy code về một máy tính khác để làm việc.
 
-> Đăng nhập SSH vào server trước, rồi chạy từng bước:
-
-1. Vào thư mục web trên server:
-```
-cd /var/www/html/apollotech
-```
-
-2. Kiểm tra remote đã đúng chưa:
-```
-git remote -v
-```
-
-3. Pull code mới nhất từ GitHub:
-```
-git pull origin main
-```
-
-4. (Nếu có conflict) Reset về version của GitHub:
-```
-git fetch origin
-git reset --hard origin/main
+1. Mở Folder muốn chứa code (ví dụ `C:\xampp\htdocs\mws\`)
+2. Chạy lệnh Clone:
+```bash
+git clone https://github.com/haiyenpa25/apollotech.git
 ```
 
 ---
 
-## 📋 Tips quan trọng
+## 🌐 FLOW 3: Kéo code từ GitHub về SERVER (GitHub → Server)
 
-- **Không commit file `data/*.json`** (chứa nội dung CMS sẽ bị overwrite): thêm vào `.gitignore`
-- **Không commit folder `old/`**: cũng thêm vào `.gitignore`
-- **Ảnh lớn** (`assets/images/solutions/`, `assets/img/partners/`): nên dùng Git LFS hoặc loại khỏi tracking nếu server đã có sẵn
+Dùng để cập nhật website đang chạy trên mạng.
 
-### Gợi ý .gitignore cho project này:
+1. SSH vào Server và vào thư mục web:
+```bash
+cd ~/public_html
 ```
-old/
-data/*.json
-assets/proj-*.jpg
+
+2. Kéo code mới nhất về:
+```bash
+git pull origin main
 ```
+
+---
+
+## 📋 Lưu ý
+- Nếu gõ `git` báo lỗi: Hãy chạy lệnh `$env:Path += ";C:\Program Files\Git\bin;C:\Program Files\Git\cmd"`
+- Các file cấu hình CMS (`data/*.json`) đã được chặn trong `.gitignore` để không bị ghi đè lung tung giữa các máy.
