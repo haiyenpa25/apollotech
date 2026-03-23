@@ -5,6 +5,11 @@
  */
 session_start();
 require_once __DIR__ . '/../../includes/cms_helper.php';
+if (!file_exists(__DIR__ . '/../db.php')) {
+    http_response_code(500);
+    echo json_encode(['error' => 'File admin/db.php bị thiếu trên server!']);
+    exit;
+}
 require_once __DIR__ . '/../db.php';
 header('Content-Type: application/json');
 

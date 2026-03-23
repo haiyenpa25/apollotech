@@ -6,6 +6,11 @@
  */
 session_start();
 require_once __DIR__ . '/../../includes/cms_helper.php';
+if (!file_exists(__DIR__ . '/../db.php')) {
+    http_response_code(500);
+    echo json_encode(['error' => 'File admin/db.php bị thiếu trên server!']);
+    exit;
+}
 require_once __DIR__ . '/../db.php';
 header('Content-Type: application/json');
 
@@ -31,8 +36,13 @@ $file = $_FILES['image'];
 
 // Validate MIME type
 $allowed_types = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp', 'image/gif'];
-$finfo = new finfo(FILEINFO_MIME_TYPE);
-$mime  = $finfo->file($file['tmp_name']);
+$mime = $file['type'];
+if (function_exists('finfo_open')) {
+    $finfo = new finfo(FILEINFO_MIME_TYPE);
+    $mime  = $finfo->file($file['tmp_name']);
+} elseif (function_exists('mime_content_type')) {
+    $mime = mime_content_type($file['tmp_name']);
+}
 if (!in_array($mime, $allowed_types)) {
     http_response_code(400);
     echo json_encode(['error' => 'File type not allowed. Only JPG/PNG/WebP/GIF.']);
