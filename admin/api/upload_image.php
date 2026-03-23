@@ -56,7 +56,7 @@ $base_dir = dirname(__DIR__, 2) . '/storage/uploads/';
 $year_month = date('Y/m/');
 $target_dir = $base_dir . $year_month;
 if (!is_dir($target_dir)) {
-    mkdir($target_dir, 0777, true);
+    mkdir($target_dir, 0755, true);
 }
 
 // Generate safe, unique filename
