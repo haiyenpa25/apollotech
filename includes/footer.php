@@ -138,7 +138,102 @@ $f_logo_svg = function_exists('asset') ? asset('logo.svg') : '';
 <script src="<?php echo SITE; ?>/assets/js/media-manager.js"></script>
 <script src="<?php echo SITE; ?>/assets/js/tinymce-editor.js"></script>
 <script src="<?php echo SITE; ?>/assets/js/inline-editor.js"></script>
-<?php
-endif; ?>
+<?php endif; ?>
+
+<!-- ── Floating Language Switcher ─────────────────────────────── -->
+<div id="lang-float-widget">
+    <button id="lang-float-toggle" title="Chọn ngôn ngữ" aria-label="Language">
+        <i class="fas fa-globe"></i>
+    </button>
+    <div id="lang-float-panel">
+        <?php
+        $cur_lang = $_SESSION['site_lang'] ?? 'vi';
+        $langs = ['vi'=>'🇻🇳 VI','en'=>'🇬🇧 EN','ko'=>'🇰🇷 KO','ja'=>'🇯🇵 JA'];
+        foreach($langs as $code=>$label):
+        ?>
+        <a href="<?php echo SITE; ?>/admin/api/lang_switch.php?lang=<?php echo $code; ?>&redirect=<?php echo urlencode($_SERVER['REQUEST_URI']); ?>"
+           class="lang-float-btn <?php echo $cur_lang===$code ? 'active' : ''; ?>"
+           title="<?php echo $label; ?>">
+            <?php echo $label; ?>
+        </a>
+        <?php endforeach; ?>
+    </div>
+</div>
+<style>
+#lang-float-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+#lang-float-toggle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #0066CC;
+    color: #fff;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,102,204,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, transform .2s;
+}
+#lang-float-toggle:hover { background: #0052A3; transform: scale(1.08); }
+#lang-float-panel {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+    animation: fadeSlideUp .18s ease;
+}
+#lang-float-panel.open { display: flex; }
+@keyframes fadeSlideUp {
+    from { opacity:0; transform:translateY(10px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+.lang-float-btn {
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    border-radius: 24px;
+    padding: 6px 14px;
+    font-size: .82rem;
+    font-weight: 700;
+    color: #374151;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: all .15s;
+    white-space: nowrap;
+}
+.lang-float-btn:hover { border-color: #0066CC; color: #0066CC; transform: scale(1.04); }
+.lang-float-btn.active { background: #0066CC; color: #fff; border-color: #0066CC; }
+</style>
+<script>
+(function(){
+    var toggle = document.getElementById('lang-float-toggle');
+    var panel  = document.getElementById('lang-float-panel');
+    if (!toggle || !panel) return;
+    toggle.addEventListener('click', function(e){
+        e.stopPropagation();
+        panel.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e){
+        if (!panel.contains(e.target) && e.target !== toggle) {
+            panel.classList.remove('open');
+        }
+    });
+})();
+</script>
 </body>
 </html>
+
