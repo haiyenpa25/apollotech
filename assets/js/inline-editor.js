@@ -5,8 +5,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const apiPath    = '/mws/apollotech/admin/api/save_content.php';
-    const langApiPath = '/mws/apollotech/admin/api/lang_switch.php';
+    const apiPath    = (window.CMS_SITE || '') + '/admin/api/save_content.php';
+    const langApiPath = (window.CMS_SITE || '') + '/admin/api/lang_switch.php';
     let currentlyEditing = null;
     let currentLang = document.documentElement.lang || 'vi';
 
