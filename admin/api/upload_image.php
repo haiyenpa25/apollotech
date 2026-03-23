@@ -13,6 +13,8 @@ if (!file_exists(__DIR__ . '/../db.php')) {
 }
 require_once __DIR__ . '/../db.php';
 header('Content-Type: application/json');
+error_reporting(0); // Chống PHP warning phá vỡ cấu trúc JSON (đặc biệt lỗi permission mkdir)
+ini_set('display_errors', 0);
 
 if (!is_admin()) {
     http_response_code(403);

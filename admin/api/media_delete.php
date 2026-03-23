@@ -7,6 +7,8 @@ session_start();
 require_once __DIR__ . '/../../includes/cms_helper.php';
 require_once __DIR__ . '/../db.php';
 header('Content-Type: application/json');
+error_reporting(0);
+ini_set('display_errors', 0);
 
 if (!is_admin()) { http_response_code(403); echo json_encode(['error' => 'Unauthorized']); exit; }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); echo json_encode(['error' => 'Method not allowed']); exit; }
