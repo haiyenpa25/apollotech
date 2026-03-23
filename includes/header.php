@@ -28,6 +28,29 @@ $motto_fb     = asset('motto.svg');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo isset($page_title) ? htmlspecialchars($page_title).' | Apollo Technologies' : 'Apollo Technologies | Website Apollo Technologies'; ?></title>
+    <?php
+    // ─── Dynamic SEO Meta ────────────────────────────────────────────────────
+    $seo_page     = isset($cms_page) ? $cms_page : basename($_SERVER['SCRIPT_NAME'], '.php');
+    $seo_title    = get_content($seo_page, 'seo_title', isset($page_title) ? $page_title . ' | Apollo Technologies' : 'Apollo Technologies');
+    $seo_desc     = get_content($seo_page, 'seo_desc',  'Apollo Technologies – giải pháp công nghệ toàn diện: CNTT, An ninh, AV, Cơ điện, Phần mềm, IoT và Viễn thông.');
+    $seo_keywords = get_content($seo_page, 'seo_keywords', 'apollo technologies, cntt, an ninh, AV, cơ điện, viễn thông, phần mềm, IoT');
+    $seo_og_img   = get_content($seo_page, 'seo_og_image', SITE . '/assets/images/og-default.jpg');
+    $seo_canon    = (isset($_SERVER['HTTPS'])&&$_SERVER['HTTPS']==='on'?'https':'http').'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    ?>
+    <meta name="description" content="<?php echo htmlspecialchars($seo_desc); ?>">
+    <meta name="keywords"    content="<?php echo htmlspecialchars($seo_keywords); ?>">
+    <link rel="canonical"    href="<?php echo htmlspecialchars($seo_canon); ?>">
+    <!-- Open Graph -->
+    <meta property="og:title"       content="<?php echo htmlspecialchars($seo_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($seo_desc); ?>">
+    <meta property="og:image"       content="<?php echo htmlspecialchars($seo_og_img); ?>">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="<?php echo htmlspecialchars($seo_canon); ?>">
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="<?php echo htmlspecialchars($seo_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($seo_desc); ?>">
+    <meta name="twitter:image"       content="<?php echo htmlspecialchars($seo_og_img); ?>">
     <meta name="description" content="<?php echo isset($page_desc) ? htmlspecialchars($page_desc) : 'Apollo Technologies - Giải pháp công nghệ toàn diện cho doanh nghiệp: ICT, An ninh, AV, Viễn thông, M&E, IoT, Phần mềm.'; ?>">
     <link rel="icon" href="https://apollotech.vn/wp-content/uploads/2024/10/favicon-32x32-1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -203,10 +203,44 @@ $solutions = [
             <div class="card-icon" style="background:#FFF3E0; color:#E65100;"><i class="fas fa-images"></i></div>
             <div class="card-content">
                 <h3>Hình Ảnh Giải Pháp</h3>
-                <p>Upload &amp; thay thế ảnh minh họa cho tất cả các trang Giải pháp.</p>
+                <p>Upload &amp; thay thế ảnh cho tất cả trang Giải pháp.</p>
                 <div class="edit-badge" style="color:#E65100;">Quản lý Ảnh <i class="fas fa-arrow-right"></i></div>
             </div>
         </a>
+        <a href="seo.php" class="card">
+            <div class="card-icon" style="background:#F0FDF4; color:#16A34A;"><i class="fas fa-search"></i></div>
+            <div class="card-content">
+                <h3>SEO Manager</h3>
+                <p>Chỉnh Title, Meta Description, OG Image từng trang.</p>
+                <div class="edit-badge" style="color:#16A34A;">Quản lý SEO <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+        <a href="contacts.php" class="card">
+            <div class="card-icon" style="background:#FFF7ED; color:#EA580C;"><i class="fas fa-envelope-open-text"></i></div>
+            <div class="card-content">
+                <h3>Hộp thư Liên hệ</h3>
+                <p>Xem và quản lý tin nhắn khách hàng gửi qua form.</p>
+                <div class="edit-badge" style="color:#EA580C;">Xem Hộp thư <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+        <a href="audit.php" class="card">
+            <div class="card-icon" style="background:#F5F3FF; color:#7C3AED;"><i class="fas fa-history"></i></div>
+            <div class="card-content">
+                <h3>Audit Log</h3>
+                <p>Lịch sử thay đổi nội dung: ai sửa, trang nào, lúc nào.</p>
+                <div class="edit-badge" style="color:#7C3AED;">Xem Lịch sử <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+        <?php if (($_SESSION['admin_role'] ?? 'super_admin') === 'super_admin'): ?>
+        <a href="users.php" class="card">
+            <div class="card-icon" style="background:#FDF2F8; color:#9D174D;"><i class="fas fa-users-cog"></i></div>
+            <div class="card-content">
+                <h3>Quản lý tài khoản</h3>
+                <p>Thêm/xóa admin, phân quyền Super Admin / Editor.</p>
+                <div class="edit-badge" style="color:#9D174D;">Quản lý Roles <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+        <?php endif; ?>
     </div>
 
     <h2 class="section-title">Giải Pháp</h2>

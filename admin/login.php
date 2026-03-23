@@ -1,16 +1,57 @@
 <?php
 session_start();
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/db.php';
 
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = trim($_POST['username'] ?? 'admin');
     $password = $_POST['password'] ?? '';
-    if (password_verify($password, CMS_PASSWORD_HASH)) {
+
+    $logged_in     = false;
+    $role          = 'editor';
+    $username_used = 'admin';
+
+    // ── 1. Try DB users table first ─────────────────────────────────────────
+    $pdo = get_db();
+    if ($pdo) {
+        try {
+            $pdo->exec("CREATE TABLE IF NOT EXISTS `cms_users` (
+                `id` INT AUTO_INCREMENT PRIMARY KEY, `username` VARCHAR(100) NOT NULL UNIQUE,
+                `password` VARCHAR(255) NOT NULL, `role` ENUM('super_admin','editor') DEFAULT 'editor',
+                `full_name` VARCHAR(255) DEFAULT '', `email` VARCHAR(255) DEFAULT '',
+                `is_active` TINYINT(1) DEFAULT 1, `last_login` DATETIME DEFAULT NULL,
+                `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+
+            $stmt = $pdo->prepare("SELECT * FROM cms_users WHERE username=? AND is_active=1 LIMIT 1");
+            $stmt->execute([$username]);
+            $user = $stmt->fetch();
+            if ($user && password_verify($password, $user['password'])) {
+                $logged_in     = true;
+                $role          = $user['role'];
+                $username_used = $user['username'];
+                // Update last login
+                $pdo->prepare("UPDATE cms_users SET last_login=NOW() WHERE id=?")->execute([$user['id']]);
+            }
+        } catch(Exception $e) {}
+    }
+
+    // ── 2. Fallback: legacy single password from config.php ─────────────────
+    if (!$logged_in && password_verify($password, CMS_PASSWORD_HASH)) {
+        $logged_in     = true;
+        $role          = 'super_admin';
+        $username_used = 'admin';
+    }
+
+    if ($logged_in) {
         $_SESSION['admin_logged_in'] = true;
+        $_SESSION['admin_role']      = $role;
+        $_SESSION['admin_username']  = $username_used;
         header("Location: index.php");
         exit;
     } else {
-        $error = 'Mật khẩu không chính xác.';
+        $error = 'Tên đăng nhập hoặc mật khẩu không chính xác.';
     }
 }
 ?>
@@ -130,13 +171,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </svg>
     </div>
     <h1 class="title">Apollo Editor</h1>
-    <p class="subtitle">Đăng nhập bằng mật khẩu quản trị.</p>
+    <p class="subtitle">Đăng nhập bằng tài khoản quản trị.</p>
 
     <?php if ($error): ?>
         <div class="error-msg"><?php echo htmlspecialchars($error); ?></div>
     <?php endif; ?>
 
     <form method="POST" action="">
+        <div class="form-group">
+            <label class="form-label" for="username">Tên đăng nhập</label>
+            <input type="text" name="username" id="username" class="form-input" autocomplete="username"
+                   placeholder="admin" value="admin">
+        </div>
         <div class="form-group">
             <label class="form-label" for="password">Mật khẩu</label>
             <input type="password" name="password" id="password" class="form-input" required autofocus placeholder="••••••••">
