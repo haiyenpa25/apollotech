@@ -119,7 +119,7 @@ $motto_fb     = asset('motto.svg');
                     </a>
                 </li>
                 <li class="has-dropdown">
-                    <a href="<?php echo SITE; ?>/solutions.php" class="<?php echo in_array($current_page,['solutions.php','giai-phap-cong-nghe-thong-tin.php','giai-phap-an-ninh.php','giai-phap-av.php','he-thong-co-dien.php','giai-phap-phan-mem.php','giai-phap-IoT.php','he-thong-thong-tin-lien-lac.php'])?'active':''; ?>">
+                    <a href="<?php echo SITE; ?>/giai-phap.php" class="<?php echo in_array($current_page,['giai-phap.php','solutions.php','giai-phap-cong-nghe-thong-tin.php','giai-phap-an-ninh.php','giai-phap-av.php','he-thong-co-dien.php','giai-phap-phan-mem.php','giai-phap-IoT.php','he-thong-thong-tin-lien-lac.php'])?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_solutions'); ?>><?php echo get_content('global', 'menu_solutions', 'Giải pháp'); ?></span> <i class="fas fa-chevron-down" style="font-size:.6rem;margin-left:3px;"></i>
                     </a>
                     <ul class="dropdown">

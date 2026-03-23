@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $page_title = "Giáº£i phÃ¡p CÃ´ng nghá»‡";
 $page_desc  = "Apollo Technologies â€” Giáº£i phÃ¡p CNTT, An ninh, AV, Viá»…n thÃ´ng, CÆ¡ Ä‘iá»‡n, Pháº§n má»m vÃ  IoT toÃ n diá»‡n cho doanh nghiá»‡p.";
 include 'includes/header.php';
@@ -103,7 +103,7 @@ include 'includes/header.php';
             <?php if($i%2==0): ?>
             <!-- image side -->
             <div class="img-side" style="width:100%;height:400px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 24px 50px rgba(0,0,0,0.1);">
-                <img src="<?php echo $s['img'];?>" style="width:100%;height:100%;object-fit:cover;transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" alt="<?php echo htmlspecialchars($s['title']); ?>">
+                <img src="<?php echo $s['img'];?>" <?php echo cms_attr('giai-phap', $s['prefix'].'img'); ?> style="width:100%;height:100%;object-fit:cover;transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" alt="<?php echo htmlspecialchars($s['title']); ?>">
 
             </div>
             <!-- content side -->
@@ -145,7 +145,7 @@ include 'includes/header.php';
             </div>
             <!-- image side -->
             <div class="img-side" style="width:100%;height:400px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 24px 50px rgba(0,0,0,0.1);">
-                <img src="<?php echo $s['img'];?>" style="width:100%;height:100%;object-fit:cover;transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" alt="<?php echo htmlspecialchars($s['title']); ?>">
+                <img src="<?php echo $s['img'];?>" <?php echo cms_attr('giai-phap', $s['prefix'].'img'); ?> style="width:100%;height:100%;object-fit:cover;transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" alt="<?php echo htmlspecialchars($s['title']); ?>">
                 <div style="position:absolute;bottom:20px;left:20px;background:<?php echo $s['color'];?>;color:#fff;padding:8px 16px;border-radius:30px;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:8px;">
                     <i class="<?php echo $s['icon'];?>"></i> Äáº§u TÆ° Cá»‘t LÃµi
                 </div>

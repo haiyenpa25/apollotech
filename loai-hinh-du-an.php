@@ -34,31 +34,36 @@
         <div class="projects-type-grid" id="projectsGrid">
             <?php
             $projects_by_type = [
-                ['name' => 'TTC Dốc Lết',              'type' => 'resort',    'tag' => 'Nghỉ dưỡng',      'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-01.jpg', 'services' => 'ICT · AV · An ninh'],
-                ['name' => 'Hyatt Regency Nha Trang',  'type' => 'hotel',     'tag' => 'Khách sạn 5*',   'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-03.jpg', 'services' => 'ICT · AV · An ninh'],
-                ['name' => 'TUI Blue Tuy Hòa',         'type' => 'hotel',     'tag' => 'Khách sạn',      'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-11.jpg', 'services' => 'ICT · AV · An ninh'],
-                ['name' => 'TUI Blue Nha Trang',       'type' => 'hotel',     'tag' => 'Khách sạn',      'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-12.jpg', 'services' => 'ICT · AV · An ninh'],
-                ['name' => "L'alya Ninh Vân Bay",      'type' => 'resort',    'tag' => 'Resort Cao cấp', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-10.jpg', 'services' => 'AV · ICT · An ninh'],
-                ['name' => 'Bệnh viện Đắk Nông',       'type' => 'hospital',  'tag' => 'Bệnh viện',      'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-05.jpg', 'services' => 'ICT · An ninh · Cơ điện'],
-                ['name' => 'Đại học Hùng Vương',       'type' => 'education', 'tag' => 'Giáo dục',       'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-04.jpg', 'services' => 'ICT · Viễn thông · Phần mềm'],
-                ['name' => 'Chuỗi nhà hàng Byblos',   'type' => 'fb',        'tag' => 'F&B',            'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg', 'services' => 'AV · An ninh · IoT'],
-                ['name' => 'Chuỗi nhà hàng Texas',    'type' => 'fb',        'tag' => 'F&B',            'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-14.jpg', 'services' => 'AV · An ninh · IoT'],
-                ['name' => 'Menas Zone Vỹ Dạ',         'type' => 'fb',        'tag' => 'F&B',            'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-08.jpg', 'services' => 'An ninh · ICT · AV'],
-                ['name' => 'Mekong Golf',              'type' => 'golf',      'tag' => 'Sân Golf',       'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-06.jpg', 'services' => 'AV · An ninh · IoT'],
-                ['name' => 'Chung cư Huyền Điệp',     'type' => 'apartment', 'tag' => 'Căn hộ',         'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · Cơ điện · IoT'],
-                ['name' => 'Luvista Quy Nhơn',         'type' => 'apartment', 'tag' => 'Căn hộ',         'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-07.jpg', 'services' => 'ICT · AV · Cơ điện'],
-                ['name' => 'Republic Plaza',           'type' => 'office',    'tag' => 'Văn phòng',      'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg', 'services' => 'ICT · Viễn thông · Cơ điện'],
-                ['name' => 'Khu Đô Thị Nam Long',      'type' => 'urban',     'tag' => 'Khu đô thị',     'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · AV · Cơ điện'],
+                ['name' => 'TTC Dốc Lết',              'type' => 'resort',    'tag' => 'Nghỉ dưỡng',      'key' => 'pt_1',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-01.jpg', 'services' => 'ICT · AV · An ninh'],
+                ['name' => 'Hyatt Regency Nha Trang',  'type' => 'hotel',     'tag' => 'Khách sạn 5*',    'key' => 'pt_2',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-03.jpg', 'services' => 'ICT · AV · An ninh'],
+                ['name' => 'TUI Blue Tuy Hòa',          'type' => 'hotel',     'tag' => 'Khách sạn',       'key' => 'pt_3',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-11.jpg', 'services' => 'ICT · AV · An ninh'],
+                ['name' => 'TUI Blue Nha Trang',        'type' => 'hotel',     'tag' => 'Khách sạn',       'key' => 'pt_4',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-12.jpg', 'services' => 'ICT · AV · An ninh'],
+                ['name' => "L'alya Ninh Vân Bay",       'type' => 'resort',    'tag' => 'Resort Cao cấp',  'key' => 'pt_5',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-10.jpg', 'services' => 'AV · ICT · An ninh'],
+                ['name' => 'Bệnh viện Đắk Nông',        'type' => 'hospital',  'tag' => 'Bệnh viện',       'key' => 'pt_6',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-05.jpg', 'services' => 'ICT · An ninh · Cơ điện'],
+                ['name' => 'Đại học Hùng Vương',        'type' => 'education', 'tag' => 'Giáo dục',        'key' => 'pt_7',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-04.jpg', 'services' => 'ICT · Viễn thông · Phần mềm'],
+                ['name' => 'Chuỗi nhà hàng Byblos',    'type' => 'fb',        'tag' => 'F&B',             'key' => 'pt_8',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg', 'services' => 'AV · An ninh · IoT'],
+                ['name' => 'Chuỗi nhà hàng Texas',     'type' => 'fb',        'tag' => 'F&B',             'key' => 'pt_9',  'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-14.jpg', 'services' => 'AV · An ninh · IoT'],
+                ['name' => 'Menas Zone Vỹ Dạ',          'type' => 'fb',        'tag' => 'F&B',             'key' => 'pt_10', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-08.jpg', 'services' => 'An ninh · ICT · AV'],
+                ['name' => 'Mekong Golf',               'type' => 'golf',      'tag' => 'Sân Golf',        'key' => 'pt_11', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-06.jpg', 'services' => 'AV · An ninh · IoT'],
+                ['name' => 'Chung cư Huyền Điệp',       'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_12', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · Cơ điện · IoT'],
+                ['name' => 'Luvista Quy Nhơn',          'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_13', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-07.jpg', 'services' => 'ICT · AV · Cơ điện'],
+                ['name' => 'Republic Plaza',             'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_14', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg', 'services' => 'ICT · Viễn thông · Cơ điện'],
+                ['name' => 'Khu Đô Thị Nam Long',        'type' => 'urban',     'tag' => 'Khu đô thị',     'key' => 'pt_15', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · AV · Cơ điện'],
             ];
-            foreach($projects_by_type as $proj): ?>
+            foreach($projects_by_type as $proj):
+                $proj['img']  = get_content('loai-hinh-du-an', $proj['key'].'_img',  $proj['img']);
+                $proj['name'] = get_content('loai-hinh-du-an', $proj['key'].'_name', $proj['name']);
+                $proj['tag']  = get_content('loai-hinh-du-an', $proj['key'].'_tag',  $proj['tag']);
+            ?>
             <div class="proj-type-card" data-type="<?php echo $proj['type']; ?>">
                 <div class="ptc-img">
-                    <img src="<?php echo $proj['img']; ?>" alt="<?php echo htmlspecialchars($proj['name']); ?>"
+                    <img src="<?php echo $proj['img']; ?>" <?php echo cms_attr('loai-hinh-du-an', $proj['key'].'_img'); ?>
+                         alt="<?php echo htmlspecialchars($proj['name']); ?>"
                          onerror="this.src='https://placehold.co/400x280/13386D/fff?text=Apollo+Project'">
-                    <span class="ptc-tag"><?php echo htmlspecialchars($proj['tag']); ?></span>
+                    <span class="ptc-tag" <?php echo cms_attr('loai-hinh-du-an', $proj['key'].'_tag'); ?>><?php echo htmlspecialchars($proj['tag']); ?></span>
                 </div>
                 <div class="ptc-body">
-                    <h3><?php echo htmlspecialchars($proj['name']); ?></h3>
+                    <h3 <?php echo cms_attr('loai-hinh-du-an', $proj['key'].'_name'); ?>><?php echo htmlspecialchars($proj['name']); ?></h3>
                     <p class="ptc-services"><i class="fas fa-layer-group"></i> <?php echo htmlspecialchars($proj['services']); ?></p>
                 </div>
             </div>
