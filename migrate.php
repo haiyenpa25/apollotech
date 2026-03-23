@@ -9,9 +9,10 @@
 
 // Cấu hình DB — sửa cho đúng với server của bạn
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'apollotech');   // <-- Tên database trên server
-define('DB_USER', 'root');          // <-- Username DB
-define('DB_PASS', '');              // <-- Password DB
+define('DB_NAME', 'apollotech'); // <-- Tên database trên server
+define('DB_USER', 'demoa3433');
+define('DB_PASS', 'Abc.1234');
+define('DB_CHARSET', 'utf8mb4');
 
 header('Content-Type: text/html; charset=utf-8');
 echo "<style>body{font-family:sans-serif;max-width:700px;margin:40px auto;padding:20px} .ok{color:#059669} .err{color:#dc2626} .section{background:#f3f4f6;border-radius:8px;padding:16px;margin:12px 0}</style>";
@@ -21,10 +22,11 @@ try {
     $pdo = new PDO(
         "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4",
         DB_USER, DB_PASS,
-        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-    );
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+        );
     echo "<p class='ok'>✅ Kết nối database thành công: <strong>" . DB_NAME . "</strong></p>";
-} catch (Exception $e) {
+}
+catch (Exception $e) {
     die("<p class='err'>❌ Kết nối thất bại: " . $e->getMessage() . "<br>Vui lòng kiểm tra DB_HOST, DB_NAME, DB_USER, DB_PASS trong file này.</p>");
 }
 
@@ -101,7 +103,8 @@ foreach ($tables as $name => $sql) {
     try {
         $pdo->exec($sql);
         echo "<p class='ok'>✅ Bảng <strong>$name</strong> — OK</p>";
-    } catch (Exception $e) {
+    }
+    catch (Exception $e) {
         echo "<p class='err'>❌ Bảng $name: " . $e->getMessage() . "</p>";
     }
 }
@@ -119,22 +122,26 @@ if ($count == 0) {
 // Import images from uploads folder if any
 echo "<div class='section'><h3>🖼️ Quét ảnh từ /storage/uploads/</h3>";
 $uploadDir = __DIR__ . '/storage/uploads/';
-$siteUrl   = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
-$imported  = 0;
+$siteUrl = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+$imported = 0;
 if (is_dir($uploadDir)) {
     $rii = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($uploadDir));
     foreach ($rii as $file) {
-        if ($file->isDir()) continue;
+        if ($file->isDir())
+            continue;
         $ext = strtolower(pathinfo($file->getFilename(), PATHINFO_EXTENSION));
-        if (!in_array($ext, ['jpg','jpeg','png','gif','webp'])) continue;
+        if (!in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp']))
+            continue;
         $filepath = $file->getPathname();
-        $relPath  = '/storage/uploads/' . ltrim(str_replace($uploadDir, '', $filepath), '/');
-        $url      = $siteUrl . str_replace('\\','/',$relPath);
+        $relPath = '/storage/uploads/' . ltrim(str_replace($uploadDir, '', $filepath), '/');
+        $url = $siteUrl . str_replace('\\', '/', $relPath);
         try {
             $pdo->prepare("INSERT IGNORE INTO media_files (filename, url, filepath, filesize, mime_type) VALUES (?,?,?,?,?)")
                 ->execute([$file->getFilename(), $url, $relPath, $file->getSize(), 'image/' . $ext]);
             $imported++;
-        } catch (Exception $e) {}
+        }
+        catch (Exception $e) {
+        }
     }
 }
 echo "<p class='ok'>✅ Đã nhập <strong>$imported</strong> ảnh vào database.</p>";
