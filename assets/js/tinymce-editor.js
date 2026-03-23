@@ -136,7 +136,7 @@ const ApolloTinyMCE = (() => {
         btn.textContent = '⏳ Đang lưu...'; btn.disabled = true;
 
         try {
-            const res  = await fetch('/mws/apollotech/admin/api/save_content.php', {
+            const res  = await fetch((window.CMS_SITE || '') + '/admin/api/save_content.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ page: activePage, key: activeKey, content })

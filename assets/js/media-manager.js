@@ -4,11 +4,11 @@
  * Usage: ApolloMedia.open(onSelectCallback)
  */
 const ApolloMedia = (() => {
-    const API_LIST        = '/mws/apollotech/admin/api/media_list.php';
-    const API_UPLOAD      = '/mws/apollotech/admin/api/upload_image.php';
-    const API_DELETE      = '/mws/apollotech/admin/api/media_delete.php';
-    const API_BULK_DELETE = '/mws/apollotech/admin/api/media_bulk_delete.php';
-    const API_ALT         = '/mws/apollotech/admin/api/media_update_alt.php';
+    const API_LIST        = (window.CMS_SITE || '') + '/admin/api/media_list.php';
+    const API_UPLOAD      = (window.CMS_SITE || '') + '/admin/api/upload_image.php';
+    const API_DELETE      = (window.CMS_SITE || '') + '/admin/api/media_delete.php';
+    const API_BULK_DELETE = (window.CMS_SITE || '') + '/admin/api/media_bulk_delete.php';
+    const API_ALT         = (window.CMS_SITE || '') + '/admin/api/media_update_alt.php';
 
     let onSelectCb  = null;
     let currentPage = 1;
@@ -24,7 +24,7 @@ const ApolloMedia = (() => {
     function buildDOM() {
         if (document.getElementById('apollo-media-overlay')) return;
         document.head.insertAdjacentHTML('beforeend',
-            '<link rel="stylesheet" href="/mws/apollotech/assets/css/media-manager.css">' +
+            '<link rel="stylesheet" href="' + (window.CMS_SITE || '') + '/assets/css/media-manager.css">' +
             '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">' +
             '<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"><\/script>');
 
