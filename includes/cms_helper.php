@@ -14,11 +14,14 @@ if (!defined('SITE')) {
 }
 
 /**
- * Get active language (from session or default 'vi')
+ * Get active language (based on physical URL folder structure)
  */
 function get_lang(): string {
-    $lang = $_SESSION['site_lang'] ?? 'vi';
-    return in_array($lang, ['vi','en','ko','ja']) ? $lang : 'vi';
+    $uri = strtolower($_SERVER['REQUEST_URI']);
+    if (strpos($uri, '/en/') !== false) return 'en';
+    if (strpos($uri, '/ko/') !== false) return 'ko';
+    if (strpos($uri, '/ja/') !== false) return 'ja';
+    return 'vi';
 }
 
 /**
