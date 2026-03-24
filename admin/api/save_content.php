@@ -79,8 +79,8 @@ if ($pdo) {
         // 3. Save the new content
         $stmt = $pdo->prepare("INSERT INTO cms_contents (page, key_name, value, lang)
             VALUES (?, ?, ?, ?)
-            ON DUPLICATE KEY UPDATE value = VALUES(value), updated_at = NOW()");
-        $stmt->execute([$page, $key, $content, $lang]);
+            ON DUPLICATE KEY UPDATE value = ?, updated_at = NOW()");
+        $stmt->execute([$page, $key, $content, $lang, $content]);
         $db_saved = true;
     } catch (Exception $e) {
         // Will fallback to JSON below

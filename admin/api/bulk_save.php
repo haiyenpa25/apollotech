@@ -63,7 +63,7 @@ try {
     $stmtFetchOld = $pdo->prepare("SELECT value FROM cms_contents WHERE page=? AND key_name=? AND lang=? LIMIT 1");
     $stmtInsert = $pdo->prepare("INSERT INTO cms_contents (page, key_name, value, lang)
         VALUES (?, ?, ?, ?)
-        ON DUPLICATE KEY UPDATE value = VALUES(value), updated_at = NOW()");
+        ON DUPLICATE KEY UPDATE value = ?, updated_at = NOW()");
 
     foreach ($input as $item) {
         if (!isset($item['page']) || !isset($item['key']) || !isset($item['content']) || !isset($item['lang'])) {
@@ -86,7 +86,7 @@ try {
             }
         } catch(Exception $e) {}
 
-        $stmtInsert->execute([$page, $key, $content, $lang]);
+        $stmtInsert->execute([$page, $key, $content, $lang, $content]);
         $savedCount++;
     }
     
