@@ -8,11 +8,11 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
 <section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('he-thong-co-dien', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
+            <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('he-thong-co-dien', 'bc_home'); ?>><?php echo get_content('he-thong-co-dien', 'bc_home', 'Trang chủ'); ?></a>
             <span>/</span>
-            <a href="<?php echo SITE;?>/solutions.php">Giải pháp</a>
+            <a href="<?php echo SITE;?>/solutions.php" <?php echo cms_attr('he-thong-co-dien', 'bc_sol'); ?>><?php echo get_content('he-thong-co-dien', 'bc_sol', 'Giải pháp'); ?></a>
             <span>/</span>
-            <span>Hệ thống Cơ điện</span>
+            <span <?php echo cms_attr('he-thong-co-dien', 'bc_curr'); ?>><?php echo get_content('he-thong-co-dien', 'bc_curr', 'Hệ thống Cơ điện'); ?></span>
         </nav>
         <h1 <?php echo cms_attr('he-thong-co-dien', 'hero_title'); ?>><?php echo get_content('he-thong-co-dien', 'hero_title', 'HỆ THỐNG <span>CƠ ĐIỆN (M&E)</span>'); ?></h1>
         <p <?php echo cms_attr('he-thong-co-dien', 'hero_desc'); ?>><?php echo get_content('he-thong-co-dien', 'hero_desc', 'Apollo cung cấp các giải pháp cơ điện toàn diện, giúp vận hành ổn định, an toàn cho mọi công trình. Các hệ thống được thiết kế đồng bộ theo đúng tiêu chuẩn kỹ thuật, tối ưu hiệu suất năng lượng, đảm bảo khả năng dự phòng và dễ dàng mở rộng trong suốt vòng đời dự án.'); ?></p>

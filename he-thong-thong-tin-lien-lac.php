@@ -8,11 +8,11 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
 <section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('he-thong-thong-tin-lien-lac', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
+            <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('he-thong-thong-tin-lien-lac', 'bc_home'); ?>><?php echo get_content('he-thong-thong-tin-lien-lac', 'bc_home', 'Trang chủ'); ?></a>
             <span>/</span>
-            <a href="<?php echo SITE;?>/solutions.php">Giải pháp</a>
+            <a href="<?php echo SITE;?>/solutions.php" <?php echo cms_attr('he-thong-thong-tin-lien-lac', 'bc_sol'); ?>><?php echo get_content('he-thong-thong-tin-lien-lac', 'bc_sol', 'Giải pháp'); ?></a>
             <span>/</span>
-            <span>Hệ thống thông tin liên lạc</span>
+            <span <?php echo cms_attr('he-thong-thong-tin-lien-lac', 'bc_curr'); ?>><?php echo get_content('he-thong-thong-tin-lien-lac', 'bc_curr', 'Hệ thống thông tin liên lạc'); ?></span>
         </nav>
         <h1 <?php echo cms_attr('he-thong-thong-tin-lien-lac', 'hero_title'); ?>><?php echo get_content('he-thong-thong-tin-lien-lac', 'hero_title', 'HỆ THỐNG <span>THÔNG TIN LIÊN LẠC</span>'); ?></h1>
         <p <?php echo cms_attr('he-thong-thong-tin-lien-lac', 'hero_desc'); ?>><?php echo get_content('he-thong-thong-tin-lien-lac', 'hero_desc', 'Apollo cung cấp các giải pháp hạ tầng kỹ thuật đảm bảo thông tin liên lạc và truyền dữ liệu tốc độ cao, ổn định.'); ?></p>

@@ -120,13 +120,14 @@ include 'includes/header.php';
                         $p['img'] = get_content('index', $p['key'].'_img', $p['def_img']);
                         $p['name'] = get_content('index', $p['key'].'_name', $p['name']);
                         $p['tag'] = get_content('index', $p['key'].'_tag', $p['tag']);
+                        $p['tags2'] = get_content('index', $p['key'].'_tags2', $p['tags2']);
                     ?>
                     <div class="proj-slide">
                         <span class="proj-tag" <?php echo cms_attr('index', $p['key'].'_tag'); ?>><?php echo htmlspecialchars($p['tag']); ?></span>
-                        <img src="<?php echo $p['img']; ?>" <?php echo cms_attr('index', $p['key'].'_img'); ?> alt="<?php echo htmlspecialchars($p['name']); ?>">
+                        <img src="<?php echo $p['img']; ?>" <?php echo cms_img_attr('index', $p['key'].'_img'); ?> alt="<?php echo htmlspecialchars($p['name']); ?>">
                         <div class="proj-info">
-                            <h4><?php echo htmlspecialchars($p['name']); ?></h4>
-                            <span><i class="fas fa-layer-group" style="font-size:.65rem;"></i> <?php echo htmlspecialchars($p['tags2']); ?></span>
+                            <h4 <?php echo cms_attr('index', $p['key'].'_name'); ?>><?php echo htmlspecialchars($p['name']); ?></h4>
+                            <span><i class="fas fa-layer-group" style="font-size:.65rem;"></i> <span <?php echo cms_attr('index', $p['key'].'_tags2'); ?>><?php echo htmlspecialchars($p['tags2']); ?></span></span>
                         </div>
                     </div>
                     <?php endforeach; ?>

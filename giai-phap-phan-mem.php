@@ -8,11 +8,11 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
 <section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('giai-phap-phan-mem', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
+            <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('giai-phap-phan-mem', 'bc_home'); ?>><?php echo get_content('giai-phap-phan-mem', 'bc_home', 'Trang chủ'); ?></a>
             <span>/</span>
-            <a href="<?php echo SITE;?>/solutions.php">Giải pháp</a>
+            <a href="<?php echo SITE;?>/solutions.php" <?php echo cms_attr('giai-phap-phan-mem', 'bc_sol'); ?>><?php echo get_content('giai-phap-phan-mem', 'bc_sol', 'Giải pháp'); ?></a>
             <span>/</span>
-            <span>Giải pháp Phần mềm</span>
+            <span <?php echo cms_attr('giai-phap-phan-mem', 'bc_curr'); ?>><?php echo get_content('giai-phap-phan-mem', 'bc_curr', 'Giải pháp Phần mềm'); ?></span>
         </nav>
         <h1 <?php echo cms_attr('giai-phap-phan-mem', 'hero_title'); ?>><?php echo get_content('giai-phap-phan-mem', 'hero_title', 'GIẢI PHÁP <span>PHẦN MỀM</span>'); ?></h1>
         <p <?php echo cms_attr('giai-phap-phan-mem', 'hero_desc'); ?>><?php echo get_content('giai-phap-phan-mem', 'hero_desc', 'Apollo cung cấp các giải pháp cơ sở hạ tầng tiên tiến, được thiết kế chuyên biệt nhằm giúp các tổ chức xây dựng một nền tảng hạ tầng công nghệ hiện đại, tin cậy và có khả năng mở rộng linh hoạt.'); ?></p>

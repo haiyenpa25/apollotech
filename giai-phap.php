@@ -12,9 +12,9 @@ include 'includes/header.php';
             <h1 <?php echo cms_attr('giai-phap', 'hero_title'); ?>><?php echo get_content('giai-phap', 'hero_title', 'Giải Pháp Công Nghệ'); ?></h1>
             <p <?php echo cms_attr('giai-phap', 'hero_desc'); ?>><?php echo get_content('giai-phap', 'hero_desc', 'Giải pháp công nghệ toàn diện, tiên tiến – giúp tối ưu hóa vận hành và thúc đẩy tăng trưởng bền vững cho đối tác.'); ?></p>
             <div class="page-breadcrumb">
-                <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
+                <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('giai-phap', 'bc_home'); ?>><?php echo get_content('giai-phap', 'bc_home', 'Trang chủ'); ?></a>
                 <i class="fas fa-chevron-right"></i>
-                <span>Giải pháp</span>
+                <span <?php echo cms_attr('giai-phap', 'bc_sol'); ?>><?php echo get_content('giai-phap', 'bc_sol', 'Giải pháp'); ?></span>
             </div>
         </div>
     </div>
@@ -123,7 +123,7 @@ include 'includes/header.php';
                     <?php endforeach; ?>
                 </ul>
                 <a href="<?php echo SITE.'/'.$s['slug'].'.php'; ?>" class="btn btn-primary btn-sm" style="background:<?php echo $s['color'];?>;border-color:<?php echo $s['color'];?>;">
-                    Khám phá chi tiết <i class="fas fa-arrow-right"></i>
+                    <span <?php echo cms_attr('giai-phap', 'btn_kham_pha'); ?>><?php echo get_content('giai-phap', 'btn_kham_pha', 'Khám phá chi tiết'); ?></span> <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
             <?php else: ?>
@@ -142,14 +142,14 @@ include 'includes/header.php';
                     <?php endforeach; ?>
                 </ul>
                 <a href="<?php echo SITE.'/'.$s['slug'].'.php'; ?>" class="btn btn-primary btn-sm" style="background:<?php echo $s['color'];?>;border-color:<?php echo $s['color'];?>;">
-                    Khám phá chi tiết <i class="fas fa-arrow-right"></i>
+                    <span <?php echo cms_attr('giai-phap', 'btn_kham_pha'); ?>><?php echo get_content('giai-phap', 'btn_kham_pha', 'Khám phá chi tiết'); ?></span> <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
             <!-- image side -->
             <div class="img-side" style="width:100%;height:400px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 24px 50px rgba(0,0,0,0.1);">
                 <img src="<?php echo $s['img'];?>" <?php echo cms_img_attr('giai-phap', $s['prefix'].'img'); ?> style="width:100%;height:100%;object-fit:cover;transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" alt="<?php echo htmlspecialchars($s['title']); ?>">
                 <div style="position:absolute;bottom:20px;left:20px;background:<?php echo $s['color'];?>;color:#fff;padding:8px 16px;border-radius:30px;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:8px;">
-                    <i class="<?php echo $s['icon'];?>"></i> Đầu Tư Cốt Lõi
+                    <i class="<?php echo $s['icon'];?>"></i> <span <?php echo cms_attr('giai-phap', 'tag_dau_tu'); ?>><?php echo get_content('giai-phap', 'tag_dau_tu', 'Đầu Tư Cốt Lõi'); ?></span>
                 </div>
             </div>
             <?php endif; ?>

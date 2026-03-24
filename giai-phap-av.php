@@ -8,11 +8,11 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
 <section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('giai-phap-av', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
+            <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('giai-phap-av', 'bc_home'); ?>><?php echo get_content('giai-phap-av', 'bc_home', 'Trang chủ'); ?></a>
             <span>/</span>
-            <a href="<?php echo SITE;?>/solutions.php">Giải pháp</a>
+            <a href="<?php echo SITE;?>/solutions.php" <?php echo cms_attr('giai-phap-av', 'bc_sol'); ?>><?php echo get_content('giai-phap-av', 'bc_sol', 'Giải pháp'); ?></a>
             <span>/</span>
-            <span>Giải pháp AV</span>
+            <span <?php echo cms_attr('giai-phap-av', 'bc_curr'); ?>><?php echo get_content('giai-phap-av', 'bc_curr', 'Giải pháp AV'); ?></span>
         </nav>
         <h1 <?php echo cms_attr('giai-phap-av', 'hero_title'); ?>><?php echo get_content('giai-phap-av', 'hero_title', 'GIẢI PHÁP <span>HỆ THỐNG AV (Audio Visual)</span>'); ?></h1>
         <p <?php echo cms_attr('giai-phap-av', 'hero_desc'); ?>><?php echo get_content('giai-phap-av', 'hero_desc', 'Giải pháp hạ tầng kỹ thuật tích hợp đồng bộ giữa các công nghệ xử lý âm thanh chuyên dụng, thiết bị hiển thị hình ảnh độ phân giải cao và các thiết bị trình chiếu kỹ thuật số. Mục tiêu cốt lõi của hệ thống là thiết lập một nền tảng truyền dẫn đa phương tiện chuẩn xác, hỗ trợ quản lý tập trung và vận hành linh hoạt thông qua các giải pháp điều khiển thông minh trong các không gian chức năng.'); ?></p>

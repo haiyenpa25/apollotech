@@ -8,11 +8,11 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
 <section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('giai-phap-IoT', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
+            <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('giai-phap-IoT', 'bc_home'); ?>><?php echo get_content('giai-phap-IoT', 'bc_home', 'Trang chủ'); ?></a>
             <span>/</span>
-            <a href="<?php echo SITE;?>/solutions.php">Giải pháp</a>
+            <a href="<?php echo SITE;?>/solutions.php" <?php echo cms_attr('giai-phap-IoT', 'bc_sol'); ?>><?php echo get_content('giai-phap-IoT', 'bc_sol', 'Giải pháp'); ?></a>
             <span>/</span>
-            <span>Giải pháp IoT</span>
+            <span <?php echo cms_attr('giai-phap-IoT', 'bc_curr'); ?>><?php echo get_content('giai-phap-IoT', 'bc_curr', 'Giải pháp IoT'); ?></span>
         </nav>
         <h1 <?php echo cms_attr('giai-phap-IoT', 'hero_title'); ?>><?php echo get_content('giai-phap-IoT', 'hero_title', 'Giải pháp IoT – <span>Apollo Smart Control</span>'); ?></h1>
         <p <?php echo cms_attr('giai-phap-IoT', 'hero_desc'); ?>><?php echo get_content('giai-phap-IoT', 'hero_desc', 'Apollo Smart Control là hệ thống kiểm soát nhà trạm thông minh được nghiên cứu và phát triển bởi Công ty Cổ Phần Apollo Technologies.'); ?></p>
