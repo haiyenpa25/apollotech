@@ -36,15 +36,41 @@ $pdo = get_db();
 $db_saved = false;
 if ($pdo) {
     try {
-        // Log old value to history before overwriting
-        $old = $pdo->prepare("SELECT value FROM cms_contents WHERE page=? AND key_name=? AND lang=? LIMIT 1");
-        $old->execute([$page, $key, $lang]);
-        $old_row = $old->fetch();
-        if ($old_row && $old_row['value'] !== $content) {
-            $pdo->prepare("INSERT INTO cms_history (page, key_name, value, lang) VALUES (?,?,?,?)")
-                ->execute([$page, $key, $old_row['value'], $lang]);
-        }
+        // 1. Auto-migrate schema silently if missing
+        try {
+            // Check if lang column exists in cms_contents
+            $stmt_chk = $pdo->query("SHOW COLUMNS FROM cms_contents LIKE 'lang'");
+            if ($stmt_chk && $stmt_chk->rowCount() == 0) {
+                $pdo->exec("ALTER TABLE cms_contents ADD COLUMN lang VARCHAR(10) NOT NULL DEFAULT 'vi'");
+                $pdo->exec("ALTER TABLE cms_contents DROP INDEX uniq_page_key");
+                $pdo->exec("ALTER TABLE cms_contents ADD UNIQUE INDEX uniq_page_key_lang (page, key_name, lang)");
+            }
+        } catch(Exception $e) {}
 
+        try {
+            // Ensure cms_history table exists
+            $pdo->exec("CREATE TABLE IF NOT EXISTS cms_history (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                page VARCHAR(100) NOT NULL,
+                key_name VARCHAR(255) NOT NULL,
+                value LONGTEXT,
+                lang VARCHAR(10) NOT NULL DEFAULT 'vi',
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+        } catch(Exception $e) {}
+
+        // 2. Log old value to history before overwriting
+        try {
+            $old = $pdo->prepare("SELECT value FROM cms_contents WHERE page=? AND key_name=? AND lang=? LIMIT 1");
+            $old->execute([$page, $key, $lang]);
+            $old_row = $old->fetch();
+            if ($old_row && $old_row['value'] !== $content) {
+                $pdo->prepare("INSERT INTO cms_history (page, key_name, value, lang) VALUES (?,?,?,?)")
+                    ->execute([$page, $key, $old_row['value'], $lang]);
+            }
+        } catch(Exception $e) {}
+
+        // 3. Save the new content
         $stmt = $pdo->prepare("INSERT INTO cms_contents (page, key_name, value, lang)
             VALUES (?, ?, ?, ?)
             ON DUPLICATE KEY UPDATE value = VALUES(value), updated_at = NOW()");
