@@ -57,6 +57,12 @@ if ($pdo) {
                 lang VARCHAR(10) NOT NULL DEFAULT 'vi',
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+
+            // Check if cms_history is missing lang column (legacy)
+            $stmt_chk2 = $pdo->query("SHOW COLUMNS FROM cms_history LIKE 'lang'");
+            if ($stmt_chk2 && $stmt_chk2->rowCount() == 0) {
+                $pdo->exec("ALTER TABLE cms_history ADD COLUMN lang VARCHAR(10) NOT NULL DEFAULT 'vi'");
+            }
         } catch(Exception $e) {}
 
         // 2. Log old value to history before overwriting
