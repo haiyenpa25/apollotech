@@ -5,7 +5,7 @@
 $hero_bg = get_content('giai-phap-phan-mem', 'hero_bg', '');
 $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,0.92) 0%, rgba(0,102,204,0.85) 100%), url('.$hero_bg.'); background-size: cover; background-position: center;' : '';
 ?>
-<section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_attr('giai-phap-phan-mem', 'hero_bg'); ?>>
+<section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('giai-phap-phan-mem', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
             <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
@@ -27,7 +27,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
             <!-- 1. AVoucher -->
             <div class="sol-detail-card featured">
                 <div class="sol-detail-img">
-                    <img <?php echo cms_attr('giai-phap-phan-mem', 'sol1_img'); ?>
+                    <img <?php echo cms_img_attr('giai-phap-phan-mem', 'sol1_img'); ?>
                          src="<?php echo get_content('giai-phap-phan-mem', 'sol1_img', SITE . '/assets/images/solutions/soft-avoucher.jpg'); ?>"
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol1_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
@@ -50,7 +50,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
             <!-- 2. AHome -->
             <div class="sol-detail-card featured">
                 <div class="sol-detail-img">
-                    <img <?php echo cms_attr('giai-phap-phan-mem', 'sol2_img'); ?>
+                    <img <?php echo cms_img_attr('giai-phap-phan-mem', 'sol2_img'); ?>
                          src="<?php echo get_content('giai-phap-phan-mem', 'sol2_img', SITE . '/assets/images/solutions/soft-ahome.jpg'); ?>"
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol2_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
@@ -73,7 +73,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
             <!-- 3. AEvent -->
             <div class="sol-detail-card featured">
                 <div class="sol-detail-img">
-                    <img <?php echo cms_attr('giai-phap-phan-mem', 'sol3_img'); ?>
+                    <img <?php echo cms_img_attr('giai-phap-phan-mem', 'sol3_img'); ?>
                          src="<?php echo get_content('giai-phap-phan-mem', 'sol3_img', SITE . '/assets/images/solutions/soft-aevent.jpg'); ?>"
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol3_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
@@ -96,7 +96,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
             <!-- 4. Custom Software -->
             <div class="sol-detail-card">
                 <div class="sol-detail-img">
-                    <img <?php echo cms_attr('giai-phap-phan-mem', 'sol4_img'); ?>
+                    <img <?php echo cms_img_attr('giai-phap-phan-mem', 'sol4_img'); ?>
                          src="<?php echo get_content('giai-phap-phan-mem', 'sol4_img', SITE . '/assets/images/solutions/soft-aconnect.jpg'); ?>"
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol4_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">

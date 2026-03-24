@@ -36,7 +36,7 @@
                 </div>
                 <div class="lv-image">
                     <img src="<?php echo get_content('linh-vuc-hoat-dong', 'lv1_img', 'https://apollotech.vn/wp-content/uploads/2026/03/1.png'); ?>"
-                         <?php echo cms_attr('linh-vuc-hoat-dong', 'lv1_img'); ?> alt="Tư vấn thiết kế">
+                         <?php echo cms_img_attr('linh-vuc-hoat-dong', 'lv1_img'); ?> alt="Tư vấn thiết kế">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="lv-image">
                     <img src="<?php echo get_content('linh-vuc-hoat-dong', 'lv2_img', 'https://apollotech.vn/wp-content/uploads/2026/03/2.png'); ?>"
-                         <?php echo cms_attr('linh-vuc-hoat-dong', 'lv2_img'); ?> alt="Triển khai thi công">
+                         <?php echo cms_img_attr('linh-vuc-hoat-dong', 'lv2_img'); ?> alt="Triển khai thi công">
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="lv-image">
                     <img src="<?php echo get_content('linh-vuc-hoat-dong', 'lv3_img', 'https://apollotech.vn/wp-content/uploads/2026/03/3.png'); ?>"
-                         <?php echo cms_attr('linh-vuc-hoat-dong', 'lv3_img'); ?> alt="Bảo trì bảo dưỡng">
+                         <?php echo cms_img_attr('linh-vuc-hoat-dong', 'lv3_img'); ?> alt="Bảo trì bảo dưỡng">
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="lv-image">
                     <img src="<?php echo get_content('linh-vuc-hoat-dong', 'lv4_img', 'https://apollotech.vn/wp-content/uploads/2026/03/4.png'); ?>"
-                         <?php echo cms_attr('linh-vuc-hoat-dong', 'lv4_img'); ?> alt="Thương mại dịch vụ">
+                         <?php echo cms_img_attr('linh-vuc-hoat-dong', 'lv4_img'); ?> alt="Thương mại dịch vụ">
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="lv-image">
                     <img src="<?php echo get_content('linh-vuc-hoat-dong', 'lv5_img', 'https://apollotech.vn/wp-content/uploads/2026/01/linh-vuc-hoat-dong-5-1.png'); ?>"
-                         <?php echo cms_attr('linh-vuc-hoat-dong', 'lv5_img'); ?> alt="Đầu tư">
+                         <?php echo cms_img_attr('linh-vuc-hoat-dong', 'lv5_img'); ?> alt="Đầu tư">
                 </div>
             </div>
         </div>

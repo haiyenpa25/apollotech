@@ -28,7 +28,7 @@
             <!-- Card 1: Thang máy khách -->
             <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);display:flex;flex-direction:column;">
                 <div style="height:280px;overflow:hidden;">
-                    <img <?php echo cms_attr('thang-may','img_passenger'); ?>
+                    <img <?php echo cms_img_attr('thang-may', 'img_passenger'); ?>
                          src="<?php echo get_content('thang-may','img_passenger','https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80'); ?>"
                          alt="Thang máy khách"
                          style="width:100%;height:100%;object-fit:cover;transition:transform .4s;<?php echo is_admin()?'cursor:pointer;outline:2px dashed #0066CC;outline-offset:-2px;':''; ?>"
@@ -50,7 +50,7 @@
             <!-- Card 2: Thang máy bệnh viện -->
             <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);display:flex;flex-direction:column;">
                 <div style="height:280px;overflow:hidden;">
-                    <img <?php echo cms_attr('thang-may','img_hospital'); ?>
+                    <img <?php echo cms_img_attr('thang-may', 'img_hospital'); ?>
                          src="<?php echo get_content('thang-may','img_hospital','https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80'); ?>"
                          alt="Thang máy bệnh viện"
                          style="width:100%;height:100%;object-fit:cover;transition:transform .4s;<?php echo is_admin()?'cursor:pointer;':''; ?>"
@@ -72,7 +72,7 @@
             <!-- Card 3: Thang máy ô tô -->
             <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);display:flex;flex-direction:column;">
                 <div style="height:280px;overflow:hidden;">
-                    <img <?php echo cms_attr('thang-may','img_car'); ?>
+                    <img <?php echo cms_img_attr('thang-may', 'img_car'); ?>
                          src="<?php echo get_content('thang-may','img_car','https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=800&q=80'); ?>"
                          alt="Thang máy ô tô hàng hóa"
                          style="width:100%;height:100%;object-fit:cover;transition:transform .4s;<?php echo is_admin()?'cursor:pointer;':''; ?>"
@@ -94,7 +94,7 @@
             <!-- Card 4: Thang thực phẩm -->
             <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.07);display:flex;flex-direction:column;">
                 <div style="height:280px;overflow:hidden;">
-                    <img <?php echo cms_attr('thang-may','img_food'); ?>
+                    <img <?php echo cms_img_attr('thang-may', 'img_food'); ?>
                          src="<?php echo get_content('thang-may','img_food','https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80'); ?>"
                          alt="Thang máy thực phẩm"
                          style="width:100%;height:100%;object-fit:cover;transition:transform .4s;<?php echo is_admin()?'cursor:pointer;':''; ?>"
@@ -121,7 +121,7 @@
     <div class="container">
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
             <div style="border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.12);">
-                <img <?php echo cms_attr('thang-may','img_brand'); ?>
+                <img <?php echo cms_img_attr('thang-may', 'img_brand'); ?>
                      src="<?php echo get_content('thang-may','img_brand','https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80'); ?>"
                      alt="Hyundai Elevators"
                      style="width:100%;height:420px;object-fit:cover;<?php echo is_admin()?'cursor:pointer;':''; ?>"

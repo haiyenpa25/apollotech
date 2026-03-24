@@ -52,7 +52,7 @@ include 'includes/header.php';
                 <div class="cert-card">
                     <span class="cert-badge">✦ CHỨNG NHẬN ISO 9001:2015 ✦</span>
                     <img src="<?php echo get_content('index', 'hero_cert_img', 'https://apollotech.vn/wp-content/uploads/2026/01/Chung-Nhan-ISO_ENG-1280x1810.jpg'); ?>"
-                         <?php echo cms_attr('index', 'hero_cert_img'); ?>
+                         <?php echo cms_img_attr('index', 'hero_cert_img'); ?>
                          alt="ISO 9001:2015 Certificate - Apollo Technologies ISOCERT"
                          onerror="this.onerror=null;this.src='https://apollotech.vn/wp-content/uploads/2026/01/Chung-Nhan-ISO_ENG-1280x1810.jpg';">
                 </div>
@@ -146,7 +146,7 @@ include 'includes/header.php';
             <!-- Visual -->
             <div class="visual-wrap">
                 <img src="<?php echo get_content('index', 'sol_preview_img', 'https://apollotech.vn/wp-content/uploads/2026/01/1X_Hosting_Illustration_03.png'); ?>"
-                     <?php echo cms_attr('index', 'sol_preview_img'); ?>
+                     <?php echo cms_img_attr('index', 'sol_preview_img'); ?>
                      alt="Apollo ICT Solutions"
                      onerror="this.src='https://placehold.co/520x440/EEF5FF/0066CC?text=Apollo+Solutions'">
             </div>

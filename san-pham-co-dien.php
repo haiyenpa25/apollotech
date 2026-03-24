@@ -28,7 +28,7 @@
 
             <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_1', 'https://apollotech.vn/wp-content/uploads/2026/02/z2209179581264_2245d21c733ed0a98a6260e9d9fb7e05.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_1'); ?> alt="ATS 825 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_1', 'https://apollotech.vn/wp-content/uploads/2026/02/z2209179581264_2245d21c733ed0a98a6260e9d9fb7e05.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_1'); ?> alt="ATS 825 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">ATS 825 kVA</h3>
@@ -44,7 +44,7 @@
 
             <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_2', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_2'); ?> alt="Baudouin 1000/1100 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_2', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_2'); ?> alt="Baudouin 1000/1100 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Baudouin 1000/1100 kVA</h3>
@@ -62,7 +62,7 @@
 
             <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_3', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_3'); ?> alt="Baudouin 1280/1410 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_3', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_3'); ?> alt="Baudouin 1280/1410 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Baudouin 1280/1410 kVA</h3>
@@ -80,7 +80,7 @@
 
             <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_4', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_4'); ?> alt="Baudouin 1400/1540 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_4', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_4'); ?> alt="Baudouin 1400/1540 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Baudouin 1400/1540 kVA</h3>
@@ -98,7 +98,7 @@
 
             <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_5', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_5'); ?> alt="Baudouin 1500/1650 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_5', 'https://apollotech.vn/wp-content/uploads/2026/02/126845237_222874382735991_4521912268779557297_n.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_5'); ?> alt="Baudouin 1500/1650 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Baudouin 1500/1650 kVA</h3>
@@ -135,7 +135,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_6', 'https://apollotech.vn/wp-content/uploads/2026/02/BA125-adv01-600x600-1.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_6'); ?> alt="BA125 – Pin xe con hạng nhẹ"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_6', 'https://apollotech.vn/wp-content/uploads/2026/02/BA125-adv01-600x600-1.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_6'); ?> alt="BA125 – Pin xe con hạng nhẹ"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BA125 – Pin xe con hạng nhẹ</h3>
@@ -155,7 +155,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_7', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA140-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_7'); ?> alt="BA140 – Pin xe con máy xăng"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_7', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA140-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_7'); ?> alt="BA140 – Pin xe con máy xăng"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BA140 – Pin xe con máy xăng</h3>
@@ -175,7 +175,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_8', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA160-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_8'); ?> alt="BA160 – Pin xe con máy dầu"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_8', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA160-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_8'); ?> alt="BA160 – Pin xe con máy dầu"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BA160 – Pin xe con máy dầu</h3>
@@ -195,7 +195,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_9', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA180-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_9'); ?> alt="BA180 – Pin xe địa hình máy dầu"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_9', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA180-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_9'); ?> alt="BA180 – Pin xe địa hình máy dầu"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BA180 – Pin xe địa hình máy dầu</h3>
@@ -215,7 +215,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_10', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA180-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_10'); ?> alt="BA208 – Pin xe tải nhẹ"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_10', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA180-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_10'); ?> alt="BA208 – Pin xe tải nhẹ"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BA208 – Pin xe tải nhẹ</h3>
@@ -235,7 +235,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_11', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BP212-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_11'); ?> alt="BA212 – Pin xe tải nặng, đầu kéo"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_11', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BP212-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_11'); ?> alt="BA212 – Pin xe tải nặng, đầu kéo"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BA212 – Pin xe tải nặng, đầu kéo</h3>
@@ -255,7 +255,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_12', 'https://apollotech.vn/wp-content/uploads/2026/02/logo-VIBAT-600x575-1.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_12'); ?> alt="BB140 – Pin xe điện Vinfast tăng cường 60Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_12', 'https://apollotech.vn/wp-content/uploads/2026/02/logo-VIBAT-600x575-1.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_12'); ?> alt="BB140 – Pin xe điện Vinfast tăng cường 60Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BB140 – Pin xe điện Vinfast tăng cường 60Ah</h3>
@@ -275,7 +275,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_13', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BB125-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_13'); ?> alt="BB125 – Pin xe điện Vinfast tiêu chuẩn 45Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_13', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BB125-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_13'); ?> alt="BB125 – Pin xe điện Vinfast tiêu chuẩn 45Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BB125 – Pin xe điện Vinfast tiêu chuẩn 45Ah</h3>
@@ -295,7 +295,7 @@
 
             <div class="product-card item-bat" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_14', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BB125-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_14'); ?> alt="BB115 – Pin xe điện Vinfast nhỏ 30Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_14', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BB125-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_14'); ?> alt="BB115 – Pin xe điện Vinfast nhỏ 30Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BB115 – Pin xe điện Vinfast nhỏ 30Ah</h3>
@@ -315,7 +315,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_15', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_15'); ?> alt="BP110: Pin xe máy 12.8V-4.8Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_15', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_15'); ?> alt="BP110: Pin xe máy 12.8V-4.8Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BP110: Pin xe máy 12.8V-4.8Ah</h3>
@@ -335,7 +335,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_16', 'https://apollotech.vn/wp-content/uploads/2026/02/BPS106-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_16'); ?> alt="BM105: Pin xe máy 4Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_16', 'https://apollotech.vn/wp-content/uploads/2026/02/BPS106-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_16'); ?> alt="BM105: Pin xe máy 4Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BM105: Pin xe máy 4Ah</h3>
@@ -355,7 +355,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_17', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_17'); ?> alt="BM120: Pin xe máy 16Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_17', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_17'); ?> alt="BM120: Pin xe máy 16Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BM120: Pin xe máy 16Ah</h3>
@@ -375,7 +375,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_18', 'https://apollotech.vn/wp-content/uploads/2026/02/BP106-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_18'); ?> alt="BP106: Pin xe máy 12.8V-2.4Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_18', 'https://apollotech.vn/wp-content/uploads/2026/02/BP106-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_18'); ?> alt="BP106: Pin xe máy 12.8V-2.4Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BP106: Pin xe máy 12.8V-2.4Ah</h3>
@@ -395,7 +395,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_19', 'https://apollotech.vn/wp-content/uploads/2026/02/logo-VIBAT-600x575-1.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_19'); ?> alt="PS140.15 – Pin xe dịch vụ máy xăng"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_19', 'https://apollotech.vn/wp-content/uploads/2026/02/logo-VIBAT-600x575-1.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_19'); ?> alt="PS140.15 – Pin xe dịch vụ máy xăng"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">PS140.15 – Pin xe dịch vụ máy xăng</h3>
@@ -415,7 +415,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_20', 'https://apollotech.vn/wp-content/uploads/2026/02/BP115-adv02-600x600-1.png'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_20'); ?> alt="BP115: Pin xe máy 12.8V-7.2Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_20', 'https://apollotech.vn/wp-content/uploads/2026/02/BP115-adv02-600x600-1.png'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_20'); ?> alt="BP115: Pin xe máy 12.8V-7.2Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BP115: Pin xe máy 12.8V-7.2Ah</h3>
@@ -435,7 +435,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_21', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_21'); ?> alt="BM115: Pin xe máy 12Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_21', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_21'); ?> alt="BM115: Pin xe máy 12Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BM115: Pin xe máy 12Ah</h3>
@@ -455,7 +455,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_22', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_22'); ?> alt="BM110: Pin xe máy 8Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_22', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_22'); ?> alt="BM110: Pin xe máy 8Ah"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">BM110: Pin xe máy 8Ah</h3>
@@ -475,7 +475,7 @@
 
             <div class="product-card item-bat" data-page="2" style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_23', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA160-600x600-1.jpg'); ?>" <?php echo cms_attr('san-pham-co-dien', 'prod_img_23'); ?> alt="PS160.15 – Pin xe dịch vụ máy dầu"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_23', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA160-600x600-1.jpg'); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_23'); ?> alt="PS160.15 – Pin xe dịch vụ máy dầu"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
                     <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">PS160.15 – Pin xe dịch vụ máy dầu</h3>

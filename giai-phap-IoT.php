@@ -5,7 +5,7 @@
 $hero_bg = get_content('giai-phap-IoT', 'hero_bg', '');
 $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,0.92) 0%, rgba(0,102,204,0.85) 100%), url('.$hero_bg.'); background-size: cover; background-position: center;' : '';
 ?>
-<section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_attr('giai-phap-IoT', 'hero_bg'); ?>>
+<section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('giai-phap-IoT', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
             <a href="<?php echo SITE;?>/index.php">Trang chủ</a>
@@ -27,7 +27,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
             <!-- Nội dung duy nhất -->
             <div class="sol-detail-card" style="grid-column: 1 / -1; max-width: 900px; margin: 0 auto;">
                 <div class="sol-detail-img">
-                    <img <?php echo cms_attr('giai-phap-IoT', 'sol1_img'); ?>
+                    <img <?php echo cms_img_attr('giai-phap-IoT', 'sol1_img'); ?>
                          src="<?php echo get_content('giai-phap-IoT', 'sol1_img', SITE . '/assets/images/solutions/iot-smart-control.jpg'); ?>"
                          alt="<?php echo strip_tags(get_content('giai-phap-IoT', 'sol1_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
