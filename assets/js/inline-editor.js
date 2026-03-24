@@ -191,34 +191,40 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
-            if (this.tagName === 'IMG') {
-                    // Open professional Media Manager popup
+            // Route: Image or Background Image -> Media Manager
+            if (this.getAttribute('data-cms-type') === 'image' || this.tagName === 'IMG') {
                     const imgEl = this;
                     const page  = imgEl.getAttribute('data-cms-page');
                     const key   = imgEl.getAttribute('data-cms-key');
 
                     ApolloMedia.open(async (url) => {
-                        const originalSrc = imgEl.src;
-                        imgEl.style.opacity = '0.5';
-                        imgEl.src = url;
+                        const originalSrc = imgEl.tagName === 'IMG' ? imgEl.src : imgEl.style.backgroundImage;
+                        if (imgEl.tagName === 'IMG') {
+                            imgEl.style.opacity = '0.5';
+                            imgEl.src = url;
+                        } else {
+                            imgEl.style.backgroundImage = `url('${url}')`;
+                        }
 
                         try {
                             const res = await fetch(apiPath, {
                                 method: 'POST',
                                 headers: { 'Content-Type': 'application/json' },
-                                body: JSON.stringify({ page, key, content: url })
+                                body: JSON.stringify({ page, key, content: url, lang: currentLang })
                             });
                             const data = await res.json();
                             if (!data.success) {
                                 alert('Không thể lưu đường dẫn ảnh mới.');
-                                imgEl.src = originalSrc;
+                                if (imgEl.tagName === 'IMG') imgEl.src = originalSrc;
+                                else imgEl.style.backgroundImage = originalSrc;
                             }
                         } catch (err) {
                             console.error(err);
                             alert('Lỗi kết nối khi lưu ảnh.');
-                            imgEl.src = originalSrc;
+                            if (imgEl.tagName === 'IMG') imgEl.src = originalSrc;
+                            else imgEl.style.backgroundImage = originalSrc;
                         } finally {
-                            imgEl.style.opacity = '1';
+                            if (imgEl.tagName === 'IMG') imgEl.style.opacity = '1';
                         }
                     });
                     return; // exit click handler early for images
