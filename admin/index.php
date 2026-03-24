@@ -241,6 +241,15 @@ $solutions = [
             </div>
         </a>
         <?php endif; ?>
+        
+        <a href="#" id="btn-sync-layout" class="card">
+            <div class="card-icon" style="background:#E0E7FF; color:#4F46E5;"><i class="fas fa-sync-alt"></i></div>
+            <div class="card-content">
+                <h3>Đồng bộ Giao diện Gốc</h3>
+                <p>Bấm để nhân bản Cấu trúc HTML từ tiếng Việt sang các mục /en, /ko, /ja.</p>
+                <div class="edit-badge" style="color:#4F46E5;">Chạy Đồng Bộ <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
     </div>
 
     <h2 class="section-title">Giải Pháp</h2>
@@ -258,5 +267,27 @@ $solutions = [
     </div>
 </div>
 
+<script>
+document.getElementById('btn-sync-layout')?.addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (!confirm("Hành động này sẽ xào nấu lại toàn bộ 60 file (.php) của các ngôn ngữ Anh, Hàn, Nhật dựa trên bản tiếng Việt gốc hiện tại.\n\nBao gồm: Cấu trúc HTML, Class CSS, Thẻ <div>...\n\nYên tâm là toàn bộ CHỮ tiếng ngoại quốc bạn đã dịch trong Database vẫn sẽ được giữ nguyên 100%!\n\nBạn có muốn tiếp tục?")) return;
+    
+    const btn = e.currentTarget;
+    const originalHtml = btn.innerHTML;
+    btn.innerHTML = '<div style="padding:10px;text-align:center;width:100%;color:#4F46E5;"><i class="fas fa-spinner fa-spin"></i> Đang tự động viết code...</div>';
+    btn.style.pointerEvents = 'none';
+    
+    try {
+        const res = await fetch('api/sync_layout.php', { method: 'POST' });
+        const data = await res.json();
+        alert(data.message);
+    } catch(err) {
+        alert("Lỗi kết nối tới Máy Chủ!");
+    } finally {
+        btn.innerHTML = originalHtml;
+        btn.style.pointerEvents = 'auto';
+    }
+});
+</script>
 </body>
 </html>
