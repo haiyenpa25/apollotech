@@ -8,10 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const apiPath    = (window.CMS_SITE || '') + '/admin/api/save_content.php';
     const langApiPath = (window.CMS_SITE || '') + '/admin/api/lang_switch.php';
     let currentlyEditing = null;
-    let currentLang = document.documentElement.lang || 'vi';
+    // Use server-injected lang (window.CMS_LANG) as source of truth — avoids async race
+    let currentLang = window.CMS_LANG || document.documentElement.lang || 'vi';
 
     // ── Detect current lang from server ──────────────────────────────────────
-    fetch(langApiPath + '?get=1').then(r => r.json()).then(d => { currentLang = d.lang || 'vi'; updateLangUI(); }).catch(()=>{});
+    // Only fetch if CMS_LANG was not injected server-side
+    if (!window.CMS_LANG) {
+        fetch(langApiPath + '?get=1').then(r => r.json()).then(d => { currentLang = d.lang || 'vi'; updateLangUI(); }).catch(()=>{});
+    }
 
     // ── Floating text editor toolbar ─────────────────────────────────────────
     const toolbar = document.createElement('div');
@@ -318,5 +322,72 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('cms-preview-overlay').classList.add('open');
     });
 
-    // Cms topbar is now just for saving and previewing. No JS language injection needed.
+    // ── Bulk Translate & Save Button ──────────────────────────────────────────
+    const topbarRight = document.querySelector('.apollo-admin-topbar > div:last-child');
+    if (topbarRight && !document.getElementById('cms-btn-bulk-translate')) {
+        const btnTranslate = document.createElement('button');
+        btnTranslate.id = 'cms-btn-bulk-translate';
+        btnTranslate.style.cssText = 'margin-right:20px; background:#10B981; border:1px solid #059669; border-radius:4px; color:#fff; padding:6px 16px; cursor:pointer; font-weight:600; box-shadow:0 2px 4px rgba(0,0,0,0.1);';
+        btnTranslate.title = 'Dùng Google Dịch trang này, rồi bấm nút này để lưu toàn bộ bản dịch vào CSDL.';
+        btnTranslate.innerHTML = '🌍 Translate & Save All';
+        topbarRight.prepend(btnTranslate);
+
+        btnTranslate.addEventListener('click', async () => {
+            const targetLang = prompt('Lưu toàn bộ chữ CỦA MÀN HÌNH NÀY (đã được Google dịch) vào mã ngôn ngữ nào?\n(Nhập mã: en, ko, ja, vi)', 'en');
+            if (!targetLang) return;
+            
+            const elements = document.querySelectorAll('[data-cms-active="true"]');
+            const payloads = [];
+            
+            elements.forEach(el => {
+                if (el.getAttribute('data-cms-type') === 'image' || el.tagName === 'IMG') return;
+                
+                const page = el.getAttribute('data-cms-page');
+                const key = el.getAttribute('data-cms-key');
+                if (!page || !key) return;
+                
+                let content = el.innerHTML;
+                // Sanitize Google Translate remnants
+                content = content.replace(/<\/?font[^>]*>/gi, '');
+                content = content.replace(/ class="[^"]*goog-[^"]*"/gi, '');
+                content = content.trim();
+                
+                payloads.push({ page, key, content, lang: targetLang.trim().toLowerCase() });
+            });
+            
+            if (payloads.length === 0) {
+                alert('Không tìm thấy nội dung văn bản nào để lưu trên màn hình này.');
+                return;
+            }
+            
+            if (!confirm(`Sẽ trích xuất ${payloads.length} dòng văn bản và lưu vào bộ nhớ [${targetLang}].\n\nTiến hành lưu?`)) return;
+            
+            try {
+                const oldText = btnTranslate.innerHTML;
+                btnTranslate.innerHTML = '⏳ Đang lưu...';
+                btnTranslate.style.pointerEvents = 'none';
+                
+                const res = await fetch((window.CMS_SITE || '') + '/admin/api/bulk_save.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payloads)
+                });
+                const data = await res.json();
+                
+                if (data.success) {
+                    alert(`✅ Đã lưu thành công ${data.saved_count} mục vào ngôn ngữ: [${targetLang}].\n\nHãy vào thư mục /${targetLang}/ để kiểm tra thành quả!`);
+                } else {
+                    alert('Lỗi: ' + (data.message || 'Không rõ nguyên nhân'));
+                }
+                btnTranslate.innerHTML = oldText;
+                btnTranslate.style.pointerEvents = 'auto';
+            } catch(err) {
+                console.error(err);
+                alert('Lỗi kết nối tới Máy Chủ khi lưu hàng loạt!');
+                btnTranslate.innerHTML = '🌍 Translate & Save All';
+                btnTranslate.style.pointerEvents = 'auto';
+            }
+        });
+    }
+
 });

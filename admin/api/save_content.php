@@ -32,6 +32,10 @@ if (empty($page) || empty($key)) {
 
 // ── Save to MySQL ────────────────────────────────────────────────────────────
 require_once __DIR__ . '/../db.php';
+require_once __DIR__ . '/../../includes/cms_helper.php';
+
+ensure_language_page_exists($page, $lang);
+
 $pdo = get_db();
 $db_saved = false;
 if ($pdo) {

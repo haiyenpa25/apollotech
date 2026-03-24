@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -25,7 +25,7 @@ function get_lang(): string {
 }
 
 /**
- * Get CMS content — reads from MySQL first (respects active language), falls back to JSON.
+ * Get CMS content â€” reads from MySQL first (respects active language), falls back to JSON.
  */
 function get_content($page, $key, $default_text = "") {
     $lang = get_lang();
@@ -103,4 +103,102 @@ function cms_img_attr($page, $key) {
     }
     return '';
 }
-?>
+
+/**
+ * Maps a Vietnamese slug to English slug
+ */
+function get_translated_slug($vi_slug) {
+    if (strpos($vi_slug, '.php') === false) $vi_slug .= '.php';
+    $map = [
+        'giai-phap.php' => 'solutions.php',
+        'loai-hinh-du-an.php' => 'projects.php',
+        'lien-he.php' => 'contact.php',
+        'tin-tuc.php' => 'news.php',
+        'chi-tiet-tin-tuc.php' => 'news-detail.php',
+        'thang-may.php' => 'elevator.php',
+        'linh-vuc-hoat-dong.php' => 'business-areas.php',
+        'doi-tac.php' => 'partners.php',
+        'san-pham-cntt.php' => 'it-products.php',
+        'san-pham-co-dien.php' => 'mep-products.php',
+        'san-pham-khong-khi.php' => 'air-products.php',
+        'giai-phap-cong-nghe-thong-tin.php' => 'it-solutions.php',
+        'giai-phap-an-ninh.php' => 'security-solutions.php',
+        'he-thong-thong-tin-lien-lac.php' => 'telecom-systems.php',
+        'giai-phap-av.php' => 'av-solutions.php',
+        'he-thong-co-dien.php' => 'mep-systems.php',
+        'giai-phap-phan-mem.php' => 'software-solutions.php',
+        'giai-phap-IoT.php' => 'iot-solutions.php'
+    ];
+    return $map[$vi_slug] ?? $vi_slug;
+}
+
+/**
+ * Reverses English slug back to Vietnamese original slug (used for determining active menu)
+ */
+function get_vi_slug($translated_slug) {
+    if (strpos($translated_slug, '.php') === false) $translated_slug .= '.php';
+    $map = [
+        'solutions.php' => 'giai-phap.php',
+        'projects.php' => 'loai-hinh-du-an.php',
+        'contact.php' => 'lien-he.php',
+        'news.php' => 'tin-tuc.php',
+        'news-detail.php' => 'chi-tiet-tin-tuc.php',
+        'elevator.php' => 'thang-may.php',
+        'business-areas.php' => 'linh-vuc-hoat-dong.php',
+        'partners.php' => 'doi-tac.php',
+        'it-products.php' => 'san-pham-cntt.php',
+        'mep-products.php' => 'san-pham-co-dien.php',
+        'air-products.php' => 'san-pham-khong-khi.php',
+        'it-solutions.php' => 'giai-phap-cong-nghe-thong-tin.php',
+        'security-solutions.php' => 'giai-phap-an-ninh.php',
+        'telecom-systems.php' => 'he-thong-thong-tin-lien-lac.php',
+        'av-solutions.php' => 'giai-phap-av.php',
+        'mep-systems.php' => 'he-thong-co-dien.php',
+        'software-solutions.php' => 'giai-phap-phan-mem.php',
+        'iot-solutions.php' => 'giai-phap-IoT.php'
+    ];
+    return $map[$translated_slug] ?? $translated_slug;
+}
+
+/**
+ * Returns full localized URL for a given Vietnamese file name.
+ */
+function get_localized_url($vi_filename) {
+    $lang = get_lang();
+    if ($lang === 'vi') return defined('SITE') ? SITE . '/' . $vi_filename : '/' . $vi_filename;
+    
+    $translated = get_translated_slug($vi_filename);
+    return defined('SITE') ? SITE . '/' . $lang . '/' . $translated : '/' . $lang . '/' . $translated;
+}
+
+/**
+ * Automates translating physical pages. Duplicates the original VI page to language folder
+ * and fixes relative include paths. Saves it as a beautifully translated slug.
+ */
+function ensure_language_page_exists($page, $lang) {
+    if ($lang === 'vi') return;
+
+    $page = preg_replace('/[^a-zA-Z0-9_-]/', '', $page);
+    $lang = preg_replace('/[^a-z]/', '', $lang);
+    if (empty($page) || empty($lang)) return;
+
+    $root_dir    = dirname(__DIR__);
+    $source_file = $root_dir . '/' . $page . '.php';
+    $target_dir  = $root_dir . '/' . $lang;
+    $translated  = get_translated_slug($page . '.php');
+    $target_file = $target_dir . '/' . $translated;
+
+    if (file_exists($source_file) && !file_exists($target_file)) {
+        if (!is_dir($target_dir)) {
+            mkdir($target_dir, 0777, true);
+        }
+        $content = file_get_contents($source_file);
+        // Prefix ../ to include/require paths that are not already relative
+        $content = preg_replace(
+            '/\b(include|require|include_once|require_once)\s+([\'"])(?!\.\.\/)/',
+            '$1 $2../',
+            $content
+        );
+        file_put_contents($target_file, $content);
+    }
+}

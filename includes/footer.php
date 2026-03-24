@@ -1,4 +1,8 @@
 <?php
+// Include CMS helpers if not already loaded
+if (!function_exists('get_localized_url')) {
+    require_once __DIR__ . '/cms_helper.php';
+}
 // Đảm bảo asset() và các biến logo đã được định nghĩa (phòng khi include độc lập)
 if (!function_exists('asset') && defined('SITE')) {
     function asset($n)
@@ -36,13 +40,13 @@ $f_logo_svg = function_exists('asset') ? asset('logo.svg') : '';
                 <div>
                     <h5 class="footer-col-ttl" <?php echo cms_attr('global', 'footer_col1'); ?>><?php echo get_content('global', 'footer_col1', 'Trang web'); ?></h5>
                     <ul class="footer-links">
-                        <li><a href="<?php echo SITE; ?>/index.php"><span <?php echo cms_attr('global', 'menu_home'); ?>><?php echo get_content('global', 'menu_home', 'Trang chủ'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/solutions.php"><span <?php echo cms_attr('global', 'menu_solutions'); ?>><?php echo get_content('global', 'menu_solutions', 'Giải pháp'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/linh-vuc-hoat-dong.php"><span <?php echo cms_attr('global', 'menu_fields'); ?>><?php echo get_content('global', 'menu_fields', 'Lĩnh vực'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/loai-hinh-du-an.php"><span <?php echo cms_attr('global', 'menu_projects'); ?>><?php echo get_content('global', 'menu_projects', 'Loại hình dự án'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/doi-tac.php"><span <?php echo cms_attr('global', 'menu_partners'); ?>><?php echo get_content('global', 'menu_partners', 'Đối tác'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/tin-tuc.php"><span <?php echo cms_attr('global', 'menu_news'); ?>><?php echo get_content('global', 'menu_news', 'Tin tức'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/lien-he.php"><span <?php echo cms_attr('global', 'menu_contact'); ?>><?php echo get_content('global', 'menu_contact', 'Liên hệ'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('index.php'); ?>"><span <?php echo cms_attr('global', 'menu_home'); ?>><?php echo get_content('global', 'menu_home', 'Trang chủ'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap.php'); ?>"><span <?php echo cms_attr('global', 'menu_solutions'); ?>><?php echo get_content('global', 'menu_solutions', 'Giải pháp'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('linh-vuc-hoat-dong.php'); ?>"><span <?php echo cms_attr('global', 'menu_fields'); ?>><?php echo get_content('global', 'menu_fields', 'Lĩnh vực'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('loai-hinh-du-an.php'); ?>"><span <?php echo cms_attr('global', 'menu_projects'); ?>><?php echo get_content('global', 'menu_projects', 'Loại hình dự án'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('doi-tac.php'); ?>"><span <?php echo cms_attr('global', 'menu_partners'); ?>><?php echo get_content('global', 'menu_partners', 'Đối tác'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('tin-tuc.php'); ?>"><span <?php echo cms_attr('global', 'menu_news'); ?>><?php echo get_content('global', 'menu_news', 'Tin tức'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('lien-he.php'); ?>"><span <?php echo cms_attr('global', 'menu_contact'); ?>><?php echo get_content('global', 'menu_contact', 'Liên hệ'); ?></span></a></li>
                     </ul>
                 </div>
 
@@ -50,13 +54,13 @@ $f_logo_svg = function_exists('asset') ? asset('logo.svg') : '';
                 <div>
                     <h5 class="footer-col-ttl" <?php echo cms_attr('global', 'footer_col2'); ?>><?php echo get_content('global', 'footer_col2', 'Giải pháp'); ?></h5>
                     <ul class="footer-links">
-                        <li><a href="<?php echo SITE; ?>/giai-phap-cong-nghe-thong-tin.php"><span <?php echo cms_attr('global', 'menu_sol_cntt'); ?>><?php echo get_content('global', 'menu_sol_cntt', 'Công nghệ thông tin'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/giai-phap-an-ninh.php"><span <?php echo cms_attr('global', 'menu_sol_sec'); ?>><?php echo get_content('global', 'menu_sol_sec', 'Giải pháp An ninh'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/he-thong-thong-tin-lien-lac.php"><span <?php echo cms_attr('global', 'menu_sol_tel'); ?>><?php echo get_content('global', 'menu_sol_tel', 'Thông tin liên lạc'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/giai-phap-av.php"><span <?php echo cms_attr('global', 'menu_sol_av'); ?>><?php echo get_content('global', 'menu_sol_av', 'Âm thanh &amp; Hình ảnh'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/he-thong-co-dien.php"><span <?php echo cms_attr('global', 'menu_sol_me'); ?>><?php echo get_content('global', 'menu_sol_me', 'Hệ thống Cơ điện'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/giai-phap-phan-mem.php"><span <?php echo cms_attr('global', 'menu_sol_sw'); ?>><?php echo get_content('global', 'menu_sol_sw', 'Giải pháp Phần mềm'); ?></span></a></li>
-                        <li><a href="<?php echo SITE; ?>/giai-phap-IoT.php"><span <?php echo cms_attr('global', 'menu_sol_iot'); ?>><?php echo get_content('global', 'menu_sol_iot', 'Giải pháp IoT'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-cong-nghe-thong-tin.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_cntt'); ?>><?php echo get_content('global', 'menu_sol_cntt', 'Công nghệ thông tin'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-an-ninh.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_sec'); ?>><?php echo get_content('global', 'menu_sol_sec', 'Giải pháp An ninh'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('he-thong-thong-tin-lien-lac.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_tel'); ?>><?php echo get_content('global', 'menu_sol_tel', 'Thông tin liên lạc'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-av.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_av'); ?>><?php echo get_content('global', 'menu_sol_av', 'Âm thanh &amp; Hình ảnh'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('he-thong-co-dien.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_me'); ?>><?php echo get_content('global', 'menu_sol_me', 'Hệ thống Cơ điện'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-phan-mem.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_sw'); ?>><?php echo get_content('global', 'menu_sol_sw', 'Giải pháp Phần mềm'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-IoT.php'); ?>"><span <?php echo cms_attr('global', 'menu_sol_iot'); ?>><?php echo get_content('global', 'menu_sol_iot', 'Giải pháp IoT'); ?></span></a></li>
                     </ul>
                 </div>
 
@@ -134,7 +138,10 @@ $f_logo_svg = function_exists('asset') ? asset('logo.svg') : '';
 </script>
 
 <?php if (is_admin()): ?>
-<script>window.CMS_SITE = '<?php echo rtrim(SITE, '/'); ?>';</script>
+<script>
+window.CMS_SITE = '<?php echo rtrim(SITE, '/'); ?>';
+window.CMS_LANG = '<?php echo get_lang(); ?>';
+</script>
 <script src="<?php echo SITE; ?>/assets/js/media-manager.js?v=<?php echo time(); ?>"></script>
 <script src="<?php echo SITE; ?>/assets/js/tinymce-editor.js?v=<?php echo time(); ?>"></script>
 <script src="<?php echo SITE; ?>/assets/js/inline-editor.js?v=<?php echo time(); ?>"></script>

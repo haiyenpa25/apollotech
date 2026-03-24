@@ -20,11 +20,14 @@ $current_page = basename($_SERVER['SCRIPT_NAME']);
 $current_lang = get_lang();
 
 // Generate permutation URLs for the language selector
+$vi_slug = get_vi_slug($current_page);
+$en_slug = get_translated_slug($vi_slug);
+
 $lang_urls = [
-    'vi' => SITE . '/' . $current_page,
-    'en' => SITE . '/en/' . $current_page,
-    'ko' => SITE . '/ko/' . $current_page,
-    'ja' => SITE . '/ja/' . $current_page,
+    'vi' => SITE . '/' . $vi_slug,
+    'en' => SITE . '/en/' . $en_slug,
+    'ko' => SITE . '/ko/' . $en_slug,
+    'ja' => SITE . '/ja/' . $en_slug,
 ];
 
 $logo_url     = asset('logo.png');
@@ -131,60 +134,59 @@ $motto_fb     = asset('motto.svg');
             </div>
             <!-- Menu -->
             <ul class="nav-menu" id="navMenu">
-<?php $lang_prefix = ($current_lang === 'vi') ? '' : '/' . $current_lang; ?>
                 <li>
-                    <a href="<?php echo SITE . $lang_prefix; ?>/index.php" class="<?php echo $current_page=='index.php'?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('index.php'); ?>" class="<?php echo $current_page=='index.php'?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_home'); ?>><?php echo get_content('global', 'menu_home', 'Trang chủ'); ?></span>
                     </a>
                 </li>
                 <li class="has-dropdown">
-                    <a href="<?php echo SITE . $lang_prefix; ?>/giai-phap.php" class="<?php echo in_array($current_page,['giai-phap.php','solutions.php','giai-phap-cong-nghe-thong-tin.php','giai-phap-an-ninh.php','giai-phap-av.php','he-thong-co-dien.php','giai-phap-phan-mem.php','giai-phap-IoT.php','he-thong-thong-tin-lien-lac.php'])?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('giai-phap.php'); ?>" class="<?php echo in_array($current_page,['giai-phap.php','solutions.php','giai-phap-cong-nghe-thong-tin.php','giai-phap-an-ninh.php','giai-phap-av.php','he-thong-co-dien.php','giai-phap-phan-mem.php','giai-phap-IoT.php','he-thong-thong-tin-lien-lac.php'])?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_solutions'); ?>><?php echo get_content('global', 'menu_solutions', 'Giải pháp'); ?></span> <i class="fas fa-chevron-down" style="font-size:.6rem;margin-left:3px;"></i>
                     </a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/giai-phap-cong-nghe-thong-tin.php"><i class="fas fa-server"></i> <span <?php echo cms_attr('global', 'menu_sol_cntt'); ?>><?php echo get_content('global', 'menu_sol_cntt', 'Công nghệ thông tin'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/giai-phap-an-ninh.php"><i class="fas fa-shield-alt"></i> <span <?php echo cms_attr('global', 'menu_sol_sec'); ?>><?php echo get_content('global', 'menu_sol_sec', 'Giải pháp An ninh'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/he-thong-thong-tin-lien-lac.php"><i class="fas fa-satellite-dish"></i> <span <?php echo cms_attr('global', 'menu_sol_tel'); ?>><?php echo get_content('global', 'menu_sol_tel', 'Thông tin liên lạc'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/giai-phap-av.php"><i class="fas fa-volume-up"></i> <span <?php echo cms_attr('global', 'menu_sol_av'); ?>><?php echo get_content('global', 'menu_sol_av', 'Âm thanh & Hình ảnh'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/he-thong-co-dien.php"><i class="fas fa-tools"></i> <span <?php echo cms_attr('global', 'menu_sol_me'); ?>><?php echo get_content('global', 'menu_sol_me', 'Hệ thống Cơ điện'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/giai-phap-phan-mem.php"><i class="fas fa-code"></i> <span <?php echo cms_attr('global', 'menu_sol_sw'); ?>><?php echo get_content('global', 'menu_sol_sw', 'Giải pháp Phần mềm'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/giai-phap-IoT.php"><i class="fas fa-wifi"></i> <span <?php echo cms_attr('global', 'menu_sol_iot'); ?>><?php echo get_content('global', 'menu_sol_iot', 'Giải pháp IoT'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-cong-nghe-thong-tin.php'); ?>"><i class="fas fa-server"></i> <span <?php echo cms_attr('global', 'menu_sol_cntt'); ?>><?php echo get_content('global', 'menu_sol_cntt', 'Công nghệ thông tin'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-an-ninh.php'); ?>"><i class="fas fa-shield-alt"></i> <span <?php echo cms_attr('global', 'menu_sol_sec'); ?>><?php echo get_content('global', 'menu_sol_sec', 'Giải pháp An ninh'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('he-thong-thong-tin-lien-lac.php'); ?>"><i class="fas fa-satellite-dish"></i> <span <?php echo cms_attr('global', 'menu_sol_tel'); ?>><?php echo get_content('global', 'menu_sol_tel', 'Thông tin liên lạc'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-av.php'); ?>"><i class="fas fa-volume-up"></i> <span <?php echo cms_attr('global', 'menu_sol_av'); ?>><?php echo get_content('global', 'menu_sol_av', 'Âm thanh & Hình ảnh'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('he-thong-co-dien.php'); ?>"><i class="fas fa-tools"></i> <span <?php echo cms_attr('global', 'menu_sol_me'); ?>><?php echo get_content('global', 'menu_sol_me', 'Hệ thống Cơ điện'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-phan-mem.php'); ?>"><i class="fas fa-code"></i> <span <?php echo cms_attr('global', 'menu_sol_sw'); ?>><?php echo get_content('global', 'menu_sol_sw', 'Giải pháp Phần mềm'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('giai-phap-IoT.php'); ?>"><i class="fas fa-wifi"></i> <span <?php echo cms_attr('global', 'menu_sol_iot'); ?>><?php echo get_content('global', 'menu_sol_iot', 'Giải pháp IoT'); ?></span></a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="<?php echo SITE . $lang_prefix; ?>/linh-vuc-hoat-dong.php" class="<?php echo $current_page=='linh-vuc-hoat-dong.php'?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('linh-vuc-hoat-dong.php'); ?>" class="<?php echo $current_page=='linh-vuc-hoat-dong.php'?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_fields'); ?>><?php echo get_content('global', 'menu_fields', 'Lĩnh vực'); ?></span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo SITE . $lang_prefix; ?>/loai-hinh-du-an.php" class="<?php echo in_array($current_page,['loai-hinh-du-an.php','projects.php'])?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('loai-hinh-du-an.php'); ?>" class="<?php echo in_array($current_page,['loai-hinh-du-an.php','projects.php'])?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_projects'); ?>><?php echo get_content('global', 'menu_projects', 'Loại hình dự án'); ?></span>
                     </a>
                 </li>
                 <li class="has-dropdown">
-                    <a href="<?php echo SITE . $lang_prefix; ?>/san-pham-co-dien.php" class="<?php echo in_array($current_page,['san-pham-co-dien.php','san-pham-cntt.php','san-pham-khong-khi.php'])||strpos($current_page,'thang-may')!==false?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('san-pham-co-dien.php'); ?>" class="<?php echo in_array($current_page,['san-pham-co-dien.php','san-pham-cntt.php','san-pham-khong-khi.php'])||strpos($current_page,'thang-may')!==false?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_products'); ?>><?php echo get_content('global', 'menu_products', 'Sản phẩm'); ?></span> <i class="fas fa-chevron-down" style="font-size:.6rem;margin-left:3px;"></i>
                     </a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/thang-may.php"><i class="fas fa-arrow-up"></i> <span <?php echo cms_attr('global', 'menu_prod_thangmay'); ?>><?php echo get_content('global', 'menu_prod_thangmay', 'Sản phẩm Thang máy'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/san-pham-co-dien.php"><i class="fas fa-bolt"></i> <span <?php echo cms_attr('global', 'menu_prod_me'); ?>><?php echo get_content('global', 'menu_prod_me', 'Sản phẩm Cơ điện'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/san-pham-khong-khi.php"><i class="fas fa-wind"></i> <span <?php echo cms_attr('global', 'menu_prod_air'); ?>><?php echo get_content('global', 'menu_prod_air', 'Sản phẩm Không khí'); ?></span></a></li>
-                        <li><a href="<?php echo SITE . $lang_prefix; ?>/san-pham-cntt.php"><i class="fas fa-microchip"></i> <span <?php echo cms_attr('global', 'menu_prod_cntt'); ?>><?php echo get_content('global', 'menu_prod_cntt', 'Sản phẩm CNTT'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('thang-may.php'); ?>"><i class="fas fa-arrow-up"></i> <span <?php echo cms_attr('global', 'menu_prod_thangmay'); ?>><?php echo get_content('global', 'menu_prod_thangmay', 'Sản phẩm Thang máy'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('san-pham-co-dien.php'); ?>"><i class="fas fa-bolt"></i> <span <?php echo cms_attr('global', 'menu_prod_me'); ?>><?php echo get_content('global', 'menu_prod_me', 'Sản phẩm Cơ điện'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('san-pham-khong-khi.php'); ?>"><i class="fas fa-wind"></i> <span <?php echo cms_attr('global', 'menu_prod_air'); ?>><?php echo get_content('global', 'menu_prod_air', 'Sản phẩm Không khí'); ?></span></a></li>
+                        <li><a href="<?php echo get_localized_url('san-pham-cntt.php'); ?>"><i class="fas fa-microchip"></i> <span <?php echo cms_attr('global', 'menu_prod_cntt'); ?>><?php echo get_content('global', 'menu_prod_cntt', 'Sản phẩm CNTT'); ?></span></a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="<?php echo SITE . $lang_prefix; ?>/doi-tac.php" class="<?php echo $current_page=='doi-tac.php'?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('doi-tac.php'); ?>" class="<?php echo $current_page=='doi-tac.php'?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_partners'); ?>><?php echo get_content('global', 'menu_partners', 'Đối tác'); ?></span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo SITE . $lang_prefix; ?>/tin-tuc.php" class="<?php echo $current_page=='tin-tuc.php'?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('tin-tuc.php'); ?>" class="<?php echo $current_page=='tin-tuc.php'?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_news'); ?>><?php echo get_content('global', 'menu_news', 'Tin tức'); ?></span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo SITE . $lang_prefix; ?>/lien-he.php" class="<?php echo $current_page=='lien-he.php'?'active':''; ?>">
+                    <a href="<?php echo get_localized_url('lien-he.php'); ?>" class="<?php echo $current_page=='lien-he.php'?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_contact'); ?>><?php echo get_content('global', 'menu_contact', 'Liên hệ'); ?></span>
                     </a>
                 </li>
