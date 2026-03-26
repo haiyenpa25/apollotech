@@ -35,23 +35,15 @@ include 'includes/header.php';
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="ci-text">
-                        <h4>Văn phòng Hồ Chí Minh (Hội sở)</h4>
+                        <h4>Văn phòng Hồ Chí Minh </h4>
                         <p>Tầng 8, 58 Nguyễn Đình Chiểu, Phường Tân Định, Quận 1, TP. Hồ Chí Minh</p>
-                    </div>
-                </div>
-                <div class="contact-info-item">
-                    <div class="ci-icon"><i class="fas fa-building"></i></div>
-                    <div class="ci-text">
-                        <h4>Văn phòng Hà Nội</h4>
-                        <p>Số 6, Tầng 13, Khu 13, Khu đô thị mới Định Công, Phường Phụng Liệt, Hoàng Mai, Hà Nội</p>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
                     <div class="ci-text">
                         <h4>Số điện thoại</h4>
-                        <p><a href="tel:+84823436996">(+84) 82 343 6996</a> &nbsp;|&nbsp;
-                           <a href="tel:+84971996339">(+84) 97 199 6339</a></p>
+                        <p><a href="tel:+84823436996">(+84) 82 343 6996</a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
@@ -65,14 +57,14 @@ include 'includes/header.php';
                     <div class="ci-icon"><i class="fas fa-clock"></i></div>
                     <div class="ci-text">
                         <h4>Giờ làm việc</h4>
-                        <p>Thứ Hai – Thứ Sáu: 08:00 – 17:30</p>
+                        <p>Thứ Hai – Thứ Sáu: 08:00 – 17:00</p>
                     </div>
                 </div>
 
                 <!-- Map placeholder -->
                 <div style="width:100%;height:250px;border-radius:12px;overflow:hidden;margin-top:10px;border:1px solid var(--c-border);">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4636396938456!2d106.68742527465397!3d10.787952989358337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528bef7e4e6b9%3A0x68a72b64b028a4cd!2s58%20Nguy%E1%BB%85n%20%C4%90%C3%ACnh%20Chi%E1%BB%83u%2C%20Ph%C6%B0%E1%BB%9Dng%20T%C3%A2n%20%C4%90%E1%BB%8Bnh%2C%20Qu%E1%BA%ADn%201%2C%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh!5e0!3m2!1svi!2svn!4v1710000000000"
+                        src="https://maps.google.com/maps?q=58%20Nguy%E1%BB%85n%20%C4%90%C3%ACnh%20Chi%E1%BB%83u,%20Qu%E1%BA%ADn%201,%20H%E1%BB%93%20Ch%C3%AD%20Minh&t=&z=17&ie=UTF8&iwloc=B&output=embed"
                         width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>

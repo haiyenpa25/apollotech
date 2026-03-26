@@ -155,13 +155,18 @@ window.CMS_LANG = '<?php echo get_lang(); ?>';
     <div id="lang-float-panel">
         <?php
         $cur_lang = $_SESSION['site_lang'] ?? 'vi';
-        $langs = ['vi'=>'🇻🇳 VI','en'=>'🇬🇧 EN','ko'=>'🇰🇷 KO','ja'=>'🇯🇵 JA'];
-        foreach($langs as $code=>$label):
+        $langs = [
+            'vi' => ['flag' => 'vn', 'label' => 'VI'],
+            'en' => ['flag' => 'gb', 'label' => 'EN'],
+            'ko' => ['flag' => 'kr', 'label' => 'KO'],
+            'ja' => ['flag' => 'jp', 'label' => 'JA']
+        ];
+        foreach($langs as $code => $data):
         ?>
         <a href="<?php echo SITE; ?>/admin/api/lang_switch.php?lang=<?php echo $code; ?>&redirect=<?php echo urlencode($_SERVER['REQUEST_URI']); ?>"
            class="lang-float-btn <?php echo $cur_lang===$code ? 'active' : ''; ?>"
-           title="<?php echo $label; ?>">
-            <?php echo $label; ?>
+           title="<?php echo $data['label']; ?>">
+            <img src="https://flagcdn.com/w20/<?php echo $data['flag']; ?>.png" alt="<?php echo $data['label']; ?>" style="width:18px; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.1);"> <?php echo $data['label']; ?>
         </a>
         <?php endforeach; ?>
     </div>

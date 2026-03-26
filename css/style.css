@@ -540,7 +540,7 @@ h2.section-title.on-dark { color:#fff; }
 .partner-logo--lg img { height:72px; }
 
 /* ─── PROJECTS CAROUSEL ───────────────────────────────────── */
-.projects-sect { background:#fff; padding:88px 0; border-top:1px solid var(--c-border); border-bottom:1px solid var(--c-border); }
+.projects-sect { background:var(--bg-light); padding:88px 0; border-top:1px solid var(--c-border); border-bottom:1px solid var(--c-border); }
 .sect-header-2col {
     display:grid;
     grid-template-columns:1fr auto;
@@ -1111,6 +1111,17 @@ h2.section-title.on-dark { color:#fff; }
     display:flex; align-items:center; justify-content:center;
     color:#fff; font-size:1.15rem;
 }
+.sol-detail-logo {
+    margin: 16px 24px -12px;
+    display: flex;
+    align-items: center;
+}
+.sol-detail-logo img {
+    height: 70px;
+    width: auto;
+    max-width: 90%;
+    object-fit: contain;
+}
 .sol-detail-body {
     padding:12px 24px 24px;
     flex:1;
@@ -1407,7 +1418,7 @@ h2.section-title.on-dark { color:#fff; }
    INFINITE MARQUEE SLIDER (Hình ảnh hoạt động)
    =================================================== */
 .marquee-sect {
-    background: #fff;
+    background: var(--bg-light);
     padding: 70px 0;
     overflow: hidden;
 }

@@ -24,7 +24,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
     <div class="container">
         <div class="solutions-grid">
 
-            <!-- 1. AVoucher -->
+<!-- 1. AVoucher -->
             <div class="sol-detail-card featured">
                 <div class="sol-detail-img">
                     <img <?php echo cms_img_attr('giai-phap-phan-mem', 'sol1_img'); ?>
@@ -32,7 +32,9 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol1_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
                 </div>
-                <div class="sol-detail-icon"><i class="fas fa-ticket-alt"></i></div>
+                <div class="sol-detail-logo">
+                    <img src="<?php echo SITE; ?>/assets/img/logo/Logo-AVoucher.png" alt="AVoucher Logo" />
+                </div>
                 <div class="sol-detail-body">
                     <h2 <?php echo cms_attr('giai-phap-phan-mem', 'sol1_title'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol1_title', 'Giải pháp phần mềm AVoucher'); ?></h2>
                     <p <?php echo cms_attr('giai-phap-phan-mem', 'sol1_desc'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol1_desc', 'Giải pháp quản lý và phát hành mã giảm giá (voucher) điện tử thông minh. Giúp doanh nghiệp tối ưu hóa các chiến dịch khuyến mãi, tăng tỷ lệ chuyển đổi khách hàng và quản lý ngân sách marketing một cách chặt chẽ, chính xác trên nền tảng số.'); ?></p>
@@ -55,7 +57,9 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol2_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
                 </div>
-                <div class="sol-detail-icon"><i class="fas fa-building"></i></div>
+                <div class="sol-detail-logo">
+                    <img src="<?php echo SITE; ?>/assets/img/logo/Logo-Ahome.png" alt="AHome Logo" />
+                </div>
                 <div class="sol-detail-body">
                     <h2 <?php echo cms_attr('giai-phap-phan-mem', 'sol2_title'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol2_title', 'Giải pháp phần mềm AHome'); ?></h2>
                     <p <?php echo cms_attr('giai-phap-phan-mem', 'sol2_desc'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol2_desc', 'Nền tảng quản lý vận hành bất động sản và khu dân cư toàn diện. AHome kết nối Ban quản lý và cư dân, giúp tự động hóa quy trình thu phí, tiếp nhận phản ánh và quản lý tiện ích nội khu, mang lại trải nghiệm sống hiện đại và tiện nghi.'); ?></p>
@@ -78,7 +82,9 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
                          alt="<?php echo strip_tags(get_content('giai-phap-phan-mem', 'sol3_title', '')); ?>"
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
                 </div>
-                <div class="sol-detail-icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="sol-detail-logo">
+                    <img src="<?php echo SITE; ?>/assets/img/logo/Logo-AEvent.png" alt="AEvent Logo" />
+                </div>
                 <div class="sol-detail-body">
                     <h2 <?php echo cms_attr('giai-phap-phan-mem', 'sol3_title'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol3_title', 'Giải pháp phần mềm AEvent'); ?></h2>
                     <p <?php echo cms_attr('giai-phap-phan-mem', 'sol3_desc'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol3_desc', 'Hệ thống quản lý sự kiện chuyên nghiệp từ khâu lập kế hoạch đến thực thi. Hỗ trợ đăng ký trực tuyến, check-in QR Code nhanh chóng và báo cáo dữ liệu thời gian thực, giúp ban tổ chức kiểm soát sự kiện hiệu quả và tạo ấn tượng tốt với khách tham dự.'); ?></p>
@@ -102,7 +108,9 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
                          title="<?php echo is_admin() ? 'Click để thay ảnh' : ''; ?>">
                 </div>
             
-                <div class="sol-detail-icon"><i class="fas fa-code"></i></div>
+                <div class="sol-detail-logo">
+                    <img src="<?php echo SITE; ?>/assets/img/logo/Logo-Aconnect.png" alt="Aconnect Logo" />
+                </div>
                 <div class="sol-detail-body">
                     <h2 <?php echo cms_attr('giai-phap-phan-mem', 'sol4_title'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol4_title', 'Giải pháp phần mềm AConnect'); ?></h2>
                     <p <?php echo cms_attr('giai-phap-phan-mem', 'sol4_desc'); ?>><?php echo get_content('giai-phap-phan-mem', 'sol4_desc', 'Nền tảng kết nối và quản trị quan hệ khách hàng đa kênh. AConnect giúp doanh nghiệp tập trung dữ liệu khách hàng, cá nhân hóa các hoạt động chăm sóc và xây dựng sự gắn kết bền vững, từ đó thúc đẩy doanh thu và lòng trung thành với thương hiệu.'); ?></p>

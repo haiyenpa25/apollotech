@@ -8,9 +8,9 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
 <section class="page-hero" style="<?php echo $bg_style; ?>" <?php echo cms_img_attr('giai-phap-an-ninh', 'hero_bg'); ?>>
     <div class="container">
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-            <a href="<?php echo SITE;?>/index.php" <?php echo cms_attr('giai-phap-an-ninh', 'bc_home'); ?>><?php echo get_content('giai-phap-an-ninh', 'bc_home', 'Trang chủ'); ?></a>
+            <a href="<?php echo get_localized_url('index.php'); ?>" <?php echo cms_attr('giai-phap-an-ninh', 'bc_home'); ?>><?php echo get_content('giai-phap-an-ninh', 'bc_home', 'Trang chủ'); ?></a>
             <span>/</span>
-            <a href="<?php echo SITE;?>/solutions.php" <?php echo cms_attr('giai-phap-an-ninh', 'bc_sol'); ?>><?php echo get_content('giai-phap-an-ninh', 'bc_sol', 'Giải pháp'); ?></a>
+            <a href="<?php echo get_localized_url('giai-phap.php'); ?>" <?php echo cms_attr('giai-phap-an-ninh', 'bc_sol'); ?>><?php echo get_content('giai-phap-an-ninh', 'bc_sol', 'Giải pháp'); ?></a>
             <span>/</span>
             <span <?php echo cms_attr('giai-phap-an-ninh', 'bc_curr'); ?>><?php echo get_content('giai-phap-an-ninh', 'bc_curr', 'Giải pháp An ninh'); ?></span>
         </nav>
@@ -167,7 +167,7 @@ $bg_style = $hero_bg ? 'background-image: linear-gradient(135deg, rgba(10,37,88,
     <div class="container">
         <h2 <?php echo cms_attr('giai-phap-an-ninh', 'cta_title'); ?>><?php echo get_content('giai-phap-an-ninh', 'cta_title', 'Bạn cần tư vấn giải pháp an ninh?'); ?></h2>
         <p <?php echo cms_attr('giai-phap-an-ninh', 'cta_desc'); ?>><?php echo get_content('giai-phap-an-ninh', 'cta_desc', 'Đội ngũ chuyên gia của Apollo luôn sẵn sàng hỗ trợ thiết kế hệ thống phù hợp với nhu cầu thực tế của doanh nghiệp bạn.'); ?></p>
-        <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-primary">
+        <a href="<?php echo get_localized_url('lien-he.php'); ?>" class="btn btn-primary">
             <i class="fas fa-paper-plane"></i> <span <?php echo cms_attr('giai-phap-an-ninh', 'cta_btn'); ?>><?php echo get_content('giai-phap-an-ninh', 'cta_btn', 'Liên hệ tư vấn ngay'); ?></span>
         </a>
     </div>
