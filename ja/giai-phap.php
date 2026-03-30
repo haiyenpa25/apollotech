@@ -113,7 +113,9 @@ include '../includes/header.php';
                 <h2 style="font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:900;color:var(--c-text-h);margin-bottom:16px;" <?php echo cms_attr('giai-phap', $s['prefix'].'title'); ?>><?php echo $s['title']; ?></h2>
                 <p style="color:var(--c-text-b);font-size:1.05rem;line-height:1.75;margin-bottom:24px;" <?php echo cms_attr('giai-phap', $s['prefix'].'desc'); ?>><?php echo $s['desc']; ?></p>
                 <ul style="margin-bottom:30px;">
-                    <?php foreach($s['items'] as $idx=>$item): ?>
+                    <?php foreach($s['items'] as $idx=>$item): 
+                        if (trim(strip_tags(str_replace('&nbsp;', '', $item))) === '') continue;
+                    ?>
                     <li style="display:flex;align-items:center;gap:12px;margin-bottom:12px;font-size:.95rem;color:var(--c-text-h);font-weight:500;">
                         <span style="display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:<?php echo $s['color'];?>20;color:<?php echo $s['color'];?>;border-radius:50%;flex-shrink:0;">
                             <i class="fas fa-check" style="font-size:0.7rem;"></i>
@@ -123,7 +125,7 @@ include '../includes/header.php';
                     <?php endforeach; ?>
                 </ul>
                 <a href="<?php echo SITE.'/'.$s['slug'].'.php'; ?>" class="btn btn-primary btn-sm" style="background:<?php echo $s['color'];?>;border-color:<?php echo $s['color'];?>;">
-                    <span <?php echo cms_attr('giai-phap', 'btn_kham_pha'); ?>><?php echo get_content('giai-phap', 'btn_kham_pha', 'Khám phá chi tiết'); ?></span> <i class="fas fa-arrow-right"></i>
+                    <span <?php echo cms_attr('giai-phap', 'btn_kham_pha'); ?>><?php echo get_content('giai-phap', 'btn_kham_pha', 'Chi tiết'); ?></span> <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
             <?php else: ?>
@@ -132,7 +134,9 @@ include '../includes/header.php';
                 <h2 style="font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:900;color:var(--c-text-h);margin-bottom:16px;" <?php echo cms_attr('giai-phap', $s['prefix'].'title'); ?>><?php echo $s['title']; ?></h2>
                 <p style="color:var(--c-text-b);font-size:1.05rem;line-height:1.75;margin-bottom:24px;" <?php echo cms_attr('giai-phap', $s['prefix'].'desc'); ?>><?php echo $s['desc']; ?></p>
                 <ul style="margin-bottom:30px;">
-                    <?php foreach($s['items'] as $idx=>$item): ?>
+                    <?php foreach($s['items'] as $idx=>$item): 
+                        if (trim(strip_tags(str_replace('&nbsp;', '', $item))) === '') continue;
+                    ?>
                     <li style="display:flex;align-items:center;gap:12px;margin-bottom:12px;font-size:.95rem;color:var(--c-text-h);font-weight:500;">
                         <span style="display:flex;align-items:center;justify-content:center;width:24px;height:24px;background:<?php echo $s['color'];?>20;color:<?php echo $s['color'];?>;border-radius:50%;flex-shrink:0;">
                             <i class="fas fa-check" style="font-size:0.7rem;"></i>
@@ -142,15 +146,12 @@ include '../includes/header.php';
                     <?php endforeach; ?>
                 </ul>
                 <a href="<?php echo SITE.'/'.$s['slug'].'.php'; ?>" class="btn btn-primary btn-sm" style="background:<?php echo $s['color'];?>;border-color:<?php echo $s['color'];?>;">
-                    <span <?php echo cms_attr('giai-phap', 'btn_kham_pha'); ?>><?php echo get_content('giai-phap', 'btn_kham_pha', 'Khám phá chi tiết'); ?></span> <i class="fas fa-arrow-right"></i>
+                    <span <?php echo cms_attr('giai-phap', 'btn_kham_pha'); ?>><?php echo get_content('giai-phap', 'btn_kham_pha', 'Chi tiết'); ?></span> <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
             <!-- image side -->
             <div class="img-side" style="width:100%;height:400px;border-radius:24px;overflow:hidden;position:relative;box-shadow:0 24px 50px rgba(0,0,0,0.1);">
                 <img src="<?php echo $s['img'];?>" <?php echo cms_img_attr('giai-phap', $s['prefix'].'img'); ?> style="width:100%;height:100%;object-fit:cover;transition: transform 0.6s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" alt="<?php echo htmlspecialchars($s['title']); ?>">
-                <div style="position:absolute;bottom:20px;left:20px;background:<?php echo $s['color'];?>;color:#fff;padding:8px 16px;border-radius:30px;font-weight:700;font-size:0.9rem;display:flex;align-items:center;gap:8px;">
-                    <i class="<?php echo $s['icon'];?>"></i> <span <?php echo cms_attr('giai-phap', 'tag_dau_tu'); ?>><?php echo get_content('giai-phap', 'tag_dau_tu', 'Đầu Tư Cốt Lõi'); ?></span>
-                </div>
             </div>
             <?php endif; ?>
         </div>
