@@ -162,7 +162,7 @@
         </div>
         <div class="partner-logos-grid">
             <?php
-            $imgs_6 = ["assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-28-1.png", "assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-29-1.png", "assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-30-1.png", "assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-31-1.png", "assets/img/partners/20250701_Y-NGHIA-LOGO-APOLLO_FINAL-02-scaled.png"];
+            $imgs_6 = ["assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-28-1.png", "assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-29-1.png", "assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-30-1.png", "assets/img/partners/LOGO-DOI-TAC-WEBSITE-170X75PX_file-2-31-1.png"];
             foreach($imgs_6 as $idx => $img): ?>
             <div class="partner-logo-box" style="padding:0; border:none; background:transparent;">
                 <img src="<?php echo get_content('doi-tac', 'sec_6_logo_' . $idx, $img); ?>" 
@@ -174,27 +174,6 @@
     </div>
 </section>
 
-<!-- Khách hàng tiêu biểu -->
-<section class="partner-group-sect" style="background:var(--c-navy-deep); padding:64px 0;">
-    <div class="container">
-        <div class="partner-group-header light">
-            <div class="pg-icon" style="background:rgba(255,255,255,.1);"><i class="fas fa-building"></i></div>
-            <div>
-                <h2 style="color:#fff;" <?php echo cms_attr('doi-tac', 'group5_title'); ?>><?php echo get_content('doi-tac', 'group5_title', 'Khách hàng tiêu biểu'); ?></h2>
-                <p style="color:rgba(255,255,255,.6);" <?php echo cms_attr('doi-tac', 'group5_desc'); ?>><?php echo get_content('doi-tac', 'group5_desc', 'Các đối tác, khách hàng tin tưởng lựa chọn Apollo trong suốt hành trình phát triển'); ?></p>
-            </div>
-        </div>
-        <div class="partner-logos-grid">
-            <?php
-            $clients = ['TTC Hospitality', 'Hyatt Hotels', 'Nam Long Group', 'TUI Blue', 'L\'alya Resort', 'Republic Plaza', 'Bệnh viện Đắk Nông', 'ĐH Hùng Vương', 'Menas Hospitality', 'Luvista Group', 'Royal Island Golf'];
-            foreach($clients as $c): ?>
-            <div class="partner-logo-box dark">
-                <span><?php echo htmlspecialchars($c); ?></span>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-</section>
 
 <!-- CTA -->
 <section class="sol-cta">

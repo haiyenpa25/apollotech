@@ -64,7 +64,7 @@
                 </div>
                 <div class="ptc-body">
                     <h3 <?php echo cms_attr('loai-hinh-du-an', $proj['key'].'_name'); ?>><?php echo htmlspecialchars($proj['name']); ?></h3>
-                    <p class="ptc-services"><i class="fas fa-layer-group"></i> <?php echo htmlspecialchars($proj['services']); ?></p>
+
                 </div>
             </div>
             <?php endforeach; ?>

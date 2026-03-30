@@ -48,7 +48,12 @@
                 ['name' => 'Chung cư Huyền Điệp',       'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_12', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-12.jpg', 'services' => 'ICT · Cơ điện · IoT'],
                 ['name' => 'Luvista Quy Nhơn',          'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_13', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-07.jpg', 'services' => 'ICT · AV · Cơ điện'],
                 ['name' => 'Republic Plaza',             'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_14', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg', 'services' => 'ICT · Viễn thông · Cơ điện'],
-                ['name' => 'Khu Đô Thị Nam Long',        'type' => 'urban',     'tag' => 'Khu đô thị',     'key' => 'pt_15', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · AV · Cơ điện'],
+                ['name' => 'Holiday Inn & Suites Saigon Airport', 'type' => 'resort', 'tag' => 'Resort',   'key' => 'pt_15', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · AV · Cơ điện'],
+                ['name' => 'Lumiere Family Village Đông Tác', 'type' => 'urban', 'tag' => 'Khu đô thị',    'key' => 'pt_16', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Lumiere', 'services' => ''],
+                ['name' => 'HD Công Nghệ Cao',          'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_17', 'img' => 'https://placehold.co/400x280/13386D/fff?text=HD+Công+Nghệ+Cao', 'services' => ''],
+                ['name' => 'Lumihub',                   'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_18', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Lumihub', 'services' => ''],
+                ['name' => 'Ariyana Đà Nẵng',           'type' => 'resort',    'tag' => 'Resort',          'key' => 'pt_19', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Ariyana', 'services' => ''],
+                ['name' => 'Quảng Trường Đaknông',      'type' => 'urban',     'tag' => 'Quảng Trường',    'key' => 'pt_20', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Quảng+Trường', 'services' => ''],
             ];
             foreach($projects_by_type as $proj):
                 $proj['img']  = get_content('loai-hinh-du-an', $proj['key'].'_img',  $proj['img']);
@@ -64,7 +69,7 @@
                 </div>
                 <div class="ptc-body">
                     <h3 <?php echo cms_attr('loai-hinh-du-an', $proj['key'].'_name'); ?>><?php echo htmlspecialchars($proj['name']); ?></h3>
-                    <p class="ptc-services"><i class="fas fa-layer-group"></i> <?php echo htmlspecialchars($proj['services']); ?></p>
+
                 </div>
             </div>
             <?php endforeach; ?>
