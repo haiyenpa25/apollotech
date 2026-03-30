@@ -67,21 +67,6 @@
     </div>
 </section>
 
-<section style="background:#fff;padding:64px 0;">
-    <div class="container">
-        <div style="text-align:center;margin-bottom:40px;">
-            <h2 style="font-size:1.6rem;font-weight:700;color:var(--c-navy);">Thương hiệu đối tác chính thức</h2>
-            <p style="color:#6b7280;">Apollo là nhà phân phối và tích hợp được uỷ quyền của các thương hiệu điều hòa hàng đầu thế giới.</p>
-        </div>
-        <div style="display:flex;justify-content:center;align-items:center;gap:48px;flex-wrap:wrap;filter:grayscale(40%);">
-            <span style="font-size:1.8rem;font-weight:900;color:#003087;">DAIKIN</span>
-            <span style="font-size:1.8rem;font-weight:900;color:#A50034;">LG</span>
-            <span style="font-size:1.6rem;font-weight:900;color:#B22222;">MITSUBISHI</span>
-            <span style="font-size:1.6rem;font-weight:900;color:#005EB8;">CARRIER</span>
-            <span style="font-size:1.8rem;font-weight:900;color:#0058A0;">PANASONIC</span>
-        </div>
-    </div>
-</section>
 
 <section class="sol-cta">
     <div class="container">

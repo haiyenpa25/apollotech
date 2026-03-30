@@ -158,11 +158,6 @@ $motto_fb     = asset('motto.svg');
                         <span <?php echo cms_attr('global', 'menu_fields'); ?>><?php echo get_content('global', 'menu_fields', 'Lĩnh vực'); ?></span>
                     </a>
                 </li>
-                <li>
-                    <a href="<?php echo get_localized_url('loai-hinh-du-an.php'); ?>" class="<?php echo in_array($current_page,['loai-hinh-du-an.php','projects.php'])?'active':''; ?>">
-                        <span <?php echo cms_attr('global', 'menu_projects'); ?>><?php echo get_content('global', 'menu_projects', 'Loại hình dự án'); ?></span>
-                    </a>
-                </li>
                 <li class="has-dropdown">
                     <a href="<?php echo get_localized_url('san-pham-co-dien.php'); ?>" class="<?php echo in_array($current_page,['san-pham-co-dien.php','san-pham-cntt.php','san-pham-khong-khi.php'])||strpos($current_page,'thang-may')!==false?'active':''; ?>">
                         <span <?php echo cms_attr('global', 'menu_products'); ?>><?php echo get_content('global', 'menu_products', 'Sản phẩm'); ?></span> <i class="fas fa-chevron-down" style="font-size:.6rem;margin-left:3px;"></i>
@@ -173,6 +168,11 @@ $motto_fb     = asset('motto.svg');
                         <li><a href="<?php echo get_localized_url('san-pham-khong-khi.php'); ?>"><i class="fas fa-wind"></i> <span <?php echo cms_attr('global', 'menu_prod_air'); ?>><?php echo get_content('global', 'menu_prod_air', 'Sản phẩm Không khí'); ?></span></a></li>
                         <li><a href="<?php echo get_localized_url('san-pham-cntt.php'); ?>"><i class="fas fa-microchip"></i> <span <?php echo cms_attr('global', 'menu_prod_cntt'); ?>><?php echo get_content('global', 'menu_prod_cntt', 'Sản phẩm CNTT'); ?></span></a></li>
                     </ul>
+                </li>
+                <li>
+                    <a href="<?php echo get_localized_url('loai-hinh-du-an.php'); ?>" class="<?php echo in_array($current_page,['loai-hinh-du-an.php','projects.php'])?'active':''; ?>">
+                        <span <?php echo cms_attr('global', 'menu_projects'); ?>><?php echo get_content('global', 'menu_projects', 'Loại hình dự án'); ?></span>
+                    </a>
                 </li>
 
                 <li>
