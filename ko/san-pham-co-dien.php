@@ -1,4 +1,4 @@
-﻿<?php include '../includes/header.php'; ?>
+<?php include '../includes/header.php'; ?>
 
 <!-- Page Hero -->
 <section class="page-hero">
@@ -112,6 +112,8 @@
                         <i class="fas fa-phone-alt"></i> Liên hệ báo giá
                     </a>
                 </div>
+            </div>
+
             <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
                 <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
                     <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_24', SITE."/img/dzima/DZM-DE424G.png"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_24'); ?> alt="엔진 30 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
