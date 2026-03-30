@@ -16,14 +16,13 @@ $zip_file = __DIR__ . '/main.zip';
 $extract_to = __DIR__ . '/temp_update';
 
 echo "<b>1. Đang kết nối Github để tải bản Code mới nhất...</b><br>";
-$zip_data = file_get_contents($repo_zip, false, stream_context_create([
+$context = stream_context_create([
     'ssl' => ['verify_peer' => false, 'verify_peer_name' => false]
-]));
+]);
 
-if (!$zip_data) {
-    die("<b style='color:red;'>❌ Lỗi: Không thể tải file từ Github.</b>");
+if (!copy($repo_zip, $zip_file, $context)) {
+    die("<b style='color:red;'>❌ Lỗi: Không thể tải file từ Github. Hoặc dung lượng ổ cứng đã đầy!</b>");
 }
-file_put_contents($zip_file, $zip_data);
 echo "<span style='color:green'>✅ Đã tải file zip (" . round(filesize($zip_file)/1024, 2) . " KB)</span><br><br>";
 
 echo "<b>2. Đang giải nén và Ghi đè hệ thống (Bảo vệ db.php)...</b><br>";
