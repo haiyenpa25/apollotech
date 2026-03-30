@@ -18,7 +18,7 @@ if (!isset($_FILES['image']) || $_FILES['image']['error'] !== UPLOAD_ERR_OK) {
 }
 
 $file = $_FILES['image'];
-$allowed_types = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp', 'image/gif'];
+$allowed_types = ['image/jpeg', 'image/jpg', 'image/png', 'image/x-png', 'image/webp', 'image/gif'];
 $mime = $file['type'];
 if (function_exists('finfo_open')) {
     $finfo = new finfo(FILEINFO_MIME_TYPE);
@@ -28,7 +28,7 @@ if (function_exists('finfo_open')) {
 }
 
 if (!in_array($mime, $allowed_types)) {
-    echo json_encode(['error' => 'File type not allowed. Only JPG/PNG/WebP/GIF.']);
+    echo json_encode(['error' => 'File type not allowed. Only JPG/PNG/WebP/GIF.'], JSON_INVALID_UTF8_SUBSTITUTE);
     exit;
 }
 
@@ -71,5 +71,5 @@ echo json_encode([
     'url'      => $url,
     'id'       => $media_id,
     'filename' => $filename
-]);
+], JSON_INVALID_UTF8_SUBSTITUTE);
 ?>

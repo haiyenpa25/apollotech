@@ -67,5 +67,5 @@ echo json_encode([
     'total' => $total,
     'pages' => (int) ceil($total / $per_page),
     'page'  => $page,
-]);
+], JSON_INVALID_UTF8_SUBSTITUTE);
 ?>

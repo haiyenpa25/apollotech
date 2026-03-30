@@ -35,8 +35,8 @@ include '../includes/header.php';
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="ci-text">
-                        <h4>Văn phòng Hồ Chí Minh (Hội sở)</h4>
-                        <p>Tầng 8, 58 Nguyễn Đình Chiểu, Phường Tân Định, Quận 1, TP. Hồ Chí Minh</p>
+                        <h4 <?php echo cms_attr('lien-he', 'addr_title_hcm'); ?>><?php echo get_content('lien-he', 'addr_title_hcm', 'Văn phòng Hồ Chí Minh (Hội sở)'); ?></h4>
+                        <p <?php echo cms_attr('lien-he', 'addr_desc_hcm'); ?>><?php echo get_content('lien-he', 'addr_desc_hcm', 'Tầng 8, 58 Nguyễn Đình Chiểu, Phường Tân Định, TP. Hồ Chí Minh'); ?></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
