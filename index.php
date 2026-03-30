@@ -36,7 +36,7 @@ include 'includes/header.php';
                     <a href="<?php echo SITE;?>/solutions.php" class="btn btn-primary">
                         <i class="fas fa-rocket"></i> Khám phá giải pháp
                     </a>
-                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline-light">
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-ghost">
                         <i class="fas fa-headset"></i> Liên hệ ngay
                     </a>
                 </div>
