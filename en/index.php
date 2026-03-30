@@ -102,7 +102,7 @@ include '../includes/header.php';
                     <?php
                     $proj_defaults = [
                         ['name'=>'TTC Dốc Lết',            'tag'=>'Nghỉ dưỡng', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_1',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-01.jpg'],
-                        ['name'=>'Chung cư Huyền Điệp',    'tag'=>'Căn hộ',     'tags2'=>'ICT · Cơ điện · IoT',        'key'=>'proj_2',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg'],
+                        ['name'=>'Chung cư Huyền Điệp',    'tag'=>'Căn hộ',     'tags2'=>'ICT · Cơ điện · IoT',        'key'=>'proj_2',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg'],
                         ['name'=>'Hyatt Regency Nha Trang', 'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_3',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-03.jpg'],
                         ['name'=>'Đại học Hùng Vương',      'tag'=>'Giáo dục',  'tags2'=>'ICT · Viễn thông · Phần mềm','key'=>'proj_4',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-04.jpg'],
                         ['name'=>'Bệnh viện Đắk Nông',      'tag'=>'Bệnh viện', 'tags2'=>'ICT · An ninh · Cơ điện',    'key'=>'proj_5',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-05.jpg'],
@@ -112,7 +112,7 @@ include '../includes/header.php';
                         ['name'=>'Republic Plaza',          'tag'=>'Văn phòng', 'tags2'=>'ICT · Viễn thông · Cơ điện', 'key'=>'proj_9',  'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg'],
                         ['name'=>"L'alya Ninh Vân Bay",     'tag'=>'Resort',    'tags2'=>'AV · ICT · An ninh',         'key'=>'proj_10', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-10.jpg'],
                         ['name'=>'TUI Blue Tuy Hòa',        'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_11', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-11.jpg'],
-                        ['name'=>'TUI Blue Nha Trang',      'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_12', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-12.jpg'],
+                        ['name'=>'TUI Blue Nha Trang',      'tag'=>'Khách sạn', 'tags2'=>'ICT · AV · An ninh',         'key'=>'proj_12', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg'],
                         ['name'=>'Chuỗi nhà hàng Byblos',  'tag'=>'F&B',       'tags2'=>'AV · An ninh · IoT',         'key'=>'proj_13', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-13.jpg'],
                         ['name'=>'Chuỗi nhà hàng Texas',   'tag'=>'F&B',       'tags2'=>'AV · An ninh · IoT',         'key'=>'proj_14', 'def_img'=>'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-14.jpg'],
                     ];
