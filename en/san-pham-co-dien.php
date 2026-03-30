@@ -112,10 +112,167 @@
                         <i class="fas fa-phone-alt"></i> Liên hệ báo giá
                     </a>
                 </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_24', SITE."/img/dzima/DZM-DE424G.png"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_24'); ?> alt="Engine 30 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Engine 30 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> DE436G</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Engine:</strong> 30-33kW</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 1.7x0.7x1.07 m</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Weight:</strong> 360 kg</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_25', SITE."/img/dzima/DZM-DE424G.png"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_25'); ?> alt="Engine 20 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Engine 20 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> DE427G</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Engine:</strong> 22-24.2kW</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 900x650x800 mm</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Weight:</strong> 230 kg</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_26', SITE."/img/dzima/DZM-DG184H.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_26'); ?> alt="Alternator 31.3 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Alternator 31.3 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> DG184G</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 522x410x434 mm</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Weight:</strong> 56.0 kg</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_27', SITE."/img/dzima/DZM-DG184H.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_27'); ?> alt="Alternator 20 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Alternator 20 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> DG184F-S</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 522x410x434 mm</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Weight:</strong> 49.7 kg</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_28', SITE."/img/dzima/DZM-DG184H.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_28'); ?> alt="Alternator 13 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Alternator 13 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> DG164D-S</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 392x403x456 mm</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Weight:</strong> 34.5 kg</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_29', SITE."/img/dzima/DZM-DG184H.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_29'); ?> alt="Alternator 11 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Alternator 11 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> DG164C-S</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 392x403x456 mm</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Weight:</strong> 31.4 kg</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_30', SITE."/img/dzima/4c2cda0885c674982dd7.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_30'); ?> alt="Synchronization Panel 2640 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Synchronization Panel 2640 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> VG4000SM</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_31', SITE."/img/dzima/4c2cda0885c674982dd7.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_31'); ?> alt="Synchronization Panel 2112 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Synchronization Panel 2112 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> VG3200SM</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 80x140x220 cm</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_32', SITE."/img/dzima/4c2cda0885c674982dd7.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_32'); ?> alt="Synchronization Panel 1650 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Synchronization Panel 1650 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> VG2500SM</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 80x140x220 cm</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
+            <div class="product-card item-gen" data-page="1" style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
+                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
+                    <img class="img-fluid" src="<?php echo get_content('san-pham-co-dien', 'prod_img_33', SITE."/img/dzima/4c2cda0885c674982dd7.jpg"); ?>" <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_33'); ?> alt="Synchronization Panel 1320 kVA"  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
+                </div>
+                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">Synchronization Panel 1320 kVA</h3>
+                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> VG2000SM</div>
+                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dimensions:</strong> 80x140x220 cm</div>
+                    </div>
+                    <a href="<?php echo SITE;?>/lien-he.php" class="btn btn-outline" style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
+                        <i class="fas fa-phone-alt"></i> Contact for quote
+                    </a>
+                </div>
+            </div>
             </div>
 
         </div>
-        
+
         <!-- Pagination UI -->
         <div class="product-pagination" style="display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 0.95rem; color: #666;">
 
