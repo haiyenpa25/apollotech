@@ -154,7 +154,19 @@ window.CMS_LANG = '<?php echo get_lang(); ?>';
     </button>
     <div id="lang-float-panel">
         <?php
-        $cur_lang = $_SESSION['site_lang'] ?? 'vi';
+        // Dùng $lang_urls đã tính sẵn trong header.php (dựa vào URL path hiện tại)
+        // Fallback: nếu header chưa tính (ví dụ include footer độc lập)
+        if (!isset($lang_urls)) {
+            $vi_slug   = get_vi_slug(basename($_SERVER['SCRIPT_NAME']));
+            $en_slug   = get_translated_slug($vi_slug);
+            $lang_urls = [
+                'vi' => SITE . '/' . $vi_slug,
+                'en' => SITE . '/en/' . $en_slug,
+                'ko' => SITE . '/ko/' . $en_slug,
+                'ja' => SITE . '/ja/' . $en_slug,
+            ];
+        }
+        $active_lang = get_lang(); // detect từ URL path - chính xác nhất
         $langs = [
             'vi' => ['flag' => 'vn', 'label' => 'VI'],
             'en' => ['flag' => 'gb', 'label' => 'EN'],
@@ -163,14 +175,15 @@ window.CMS_LANG = '<?php echo get_lang(); ?>';
         ];
         foreach($langs as $code => $data):
         ?>
-        <a href="<?php echo SITE; ?>/admin/api/lang_switch.php?lang=<?php echo $code; ?>&redirect=<?php echo urlencode($_SERVER['REQUEST_URI']); ?>"
-           class="lang-float-btn <?php echo $cur_lang===$code ? 'active' : ''; ?>"
+        <a href="<?php echo htmlspecialchars($lang_urls[$code]); ?>"
+           class="lang-float-btn <?php echo $active_lang === $code ? 'active' : ''; ?>"
            title="<?php echo $data['label']; ?>">
             <img src="https://flagcdn.com/w20/<?php echo $data['flag']; ?>.png" alt="<?php echo $data['label']; ?>" style="width:18px; border-radius:2px; box-shadow:0 1px 2px rgba(0,0,0,0.1);"> <?php echo $data['label']; ?>
         </a>
         <?php endforeach; ?>
     </div>
 </div>
+
 <style>
 #lang-float-widget {
     position: fixed;
