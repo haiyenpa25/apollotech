@@ -27,7 +27,6 @@
                 <button class="custom-pt-tab" data-type="golf">SÂN GOLF</button>
                 <button class="custom-pt-tab" data-type="apartment">CĂN HỘ/ NHÀ PHỐ</button>
                 <button class="custom-pt-tab" data-type="office">VĂN PHÒNG</button>
-                <button class="custom-pt-tab" data-type="urban">KHU ĐÔ THỊ</button>
             </div>
         </div>
 
@@ -49,11 +48,10 @@
                 ['name' => 'Luvista Quy Nhơn',          'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_13', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-07.jpg', 'services' => 'ICT · AV · Cơ điện'],
                 ['name' => 'Republic Plaza',             'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_14', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg', 'services' => 'ICT · Viễn thông · Cơ điện'],
                 ['name' => 'Holiday Inn & Suites Saigon Airport', 'type' => 'resort', 'tag' => 'Resort',   'key' => 'pt_15', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-02.jpg', 'services' => 'ICT · AV · Cơ điện'],
-                ['name' => 'Lumiere Family Village Đông Tác', 'type' => 'urban', 'tag' => 'Khu đô thị',    'key' => 'pt_16', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Lumiere', 'services' => ''],
                 ['name' => 'HD Công Nghệ Cao',          'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_17', 'img' => 'https://placehold.co/400x280/13386D/fff?text=HD+Công+Nghệ+Cao', 'services' => ''],
                 ['name' => 'Lumihub',                   'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_18', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Lumihub', 'services' => ''],
                 ['name' => 'Ariyana Đà Nẵng',           'type' => 'resort',    'tag' => 'Resort',          'key' => 'pt_19', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Ariyana', 'services' => ''],
-                ['name' => 'Quảng Trường Đaknông',      'type' => 'urban',     'tag' => 'Quảng Trường',    'key' => 'pt_20', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Quảng+Trường', 'services' => ''],
+                ['name' => 'M Village Phan Văn Trị',    'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_21', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg', 'services' => 'ICT · Cơ điện · An ninh'],
             ];
             foreach($projects_by_type as $proj):
                 $proj['img']  = get_content('loai-hinh-du-an', $proj['key'].'_img',  $proj['img']);
