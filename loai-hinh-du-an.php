@@ -51,8 +51,11 @@
                 ['name' => 'HD Công Nghệ Cao',          'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_17', 'img' => 'https://placehold.co/400x280/13386D/fff?text=HD+Công+Nghệ+Cao', 'services' => ''],
                 ['name' => 'Lumihub',                   'type' => 'office',    'tag' => 'Văn phòng',       'key' => 'pt_18', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Lumihub', 'services' => ''],
                 ['name' => 'Ariyana Đà Nẵng',           'type' => 'resort',    'tag' => 'Resort',          'key' => 'pt_19', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Ariyana', 'services' => ''],
+                ['name' => 'Lumiere Family Village Đông Tác', 'type' => 'apartment', 'tag' => 'Căn hộ',   'key' => 'pt_16', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Lumiere', 'services' => ''],
+                ['name' => 'Quảng Trường Đaknông',      'type' => 'resort',    'tag' => 'Resort',          'key' => 'pt_20', 'img' => 'https://placehold.co/400x280/13386D/fff?text=Quảng+Trường', 'services' => ''],
                 ['name' => 'M Village Phan Văn Trị',    'type' => 'apartment', 'tag' => 'Căn hộ',          'key' => 'pt_21', 'img' => 'https://apollotech.vn/wp-content/uploads/2026/01/Hinh-du-an-317x267-09.jpg', 'services' => 'ICT · Cơ điện · An ninh'],
             ];
+
             foreach($projects_by_type as $proj):
                 $proj['img']  = get_content('loai-hinh-du-an', $proj['key'].'_img',  $proj['img']);
                 $proj['name'] = get_content('loai-hinh-du-an', $proj['key'].'_name', $proj['name']);
