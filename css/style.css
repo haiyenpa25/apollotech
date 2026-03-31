@@ -658,15 +658,16 @@ h2.section-title.on-dark { color:#fff; }
     gap:80px;
     align-items:center;
 }
-.visual-wrap { position:relative; }
-.visual-wrap img { border-radius:20px; box-shadow:var(--sh-lg); position:relative; z-index:1; }
+.visual-wrap { position:relative; padding: 22px 0 0 22px; }
+.visual-wrap img { border-radius:20px; box-shadow:var(--sh-lg); position:relative; z-index:1; display:block; width:100%; }
 .visual-wrap::before {
     content:'';
     position:absolute;
-    top:-22px; left:-22px; right:44px; bottom:44px;
+    top: 0; left: 0; right: 22px; bottom: -22px;
     background:linear-gradient(135deg,rgba(0,102,204,.08),rgba(10,22,40,.04));
     border-radius:24px;
-    border:1px dashed rgba(0,102,204,.2);
+    border: 2px dashed rgba(0,102,204,.35);
+    z-index: 0;
 }
 .sol-item {
     display:flex;
