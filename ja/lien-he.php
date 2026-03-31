@@ -42,30 +42,35 @@ include '../includes/header.php';
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-building"></i></div>
                     <div class="ci-text">
-                        <h4>Văn phòng Hà Nội</h4>
-                        <p>Số 6, Tầng 13, Khu 13, Khu đô thị mới Định Công, Phường Phụng Liệt, Hoàng Mai, Hà Nội</p>
+                        <h4 <?php echo cms_attr('lien-he', 'addr_title_hn'); ?>><?php echo get_content('lien-he', 'addr_title_hn', 'Văn phòng Hà Nội'); ?></h4>
+                        <p <?php echo cms_attr('lien-he', 'addr_desc_hn'); ?>><?php echo get_content('lien-he', 'addr_desc_hn', 'Số 6, Tầng 13, Khu 13, Khu đô thị mới Định Công, Phường Phụng Liệt, Hoàng Mai, Hà Nội'); ?></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
                     <div class="ci-text">
-                        <h4>Số điện thoại</h4>
-                        <p><a href="tel:+84823436996">(+84) 82 343 6996</a> &nbsp;|&nbsp;
-                           <a href="tel:+84971996339">(+84) 97 199 6339</a></p>
+                        <h4 <?php echo cms_attr('lien-he', 'phone_title'); ?>><?php echo get_content('lien-he', 'phone_title', 'Số điện thoại'); ?></h4>
+                        <p><?php
+                            $phone1 = get_content('lien-he', 'phone_val', '(+84) 82 343 6996');
+                            $phone2 = get_content('lien-he', 'phone_val2', '(+84) 97 199 6339');
+                        ?><a href="tel:<?php echo preg_replace('/[^0-9+]/', '', strip_tags($phone1)); ?>" <?php echo cms_attr('lien-he', 'phone_val'); ?>><?php echo $phone1; ?></a> &nbsp;|&nbsp;
+                           <a href="tel:<?php echo preg_replace('/[^0-9+]/', '', strip_tags($phone2)); ?>" <?php echo cms_attr('lien-he', 'phone_val2'); ?>><?php echo $phone2; ?></a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-envelope"></i></div>
                     <div class="ci-text">
-                        <h4>Email</h4>
-                        <p><a href="mailto:contact@apollotech.vn">contact@apollotech.vn</a></p>
+                        <h4 <?php echo cms_attr('lien-he', 'email_title'); ?>><?php echo get_content('lien-he', 'email_title', 'Email'); ?></h4>
+                        <p><?php
+                            $email = get_content('lien-he', 'email_val', 'contact@apollotech.vn');
+                        ?><a href="mailto:<?php echo strip_tags($email); ?>" <?php echo cms_attr('lien-he', 'email_val'); ?>><?php echo $email; ?></a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-clock"></i></div>
                     <div class="ci-text">
-                        <h4>Giờ làm việc</h4>
-                        <p>Thứ Hai – Thứ Sáu: 08:00 – 17:30</p>
+                        <h4 <?php echo cms_attr('lien-he', 'hours_title'); ?>><?php echo get_content('lien-he', 'hours_title', 'Giờ làm việc'); ?></h4>
+                        <p <?php echo cms_attr('lien-he', 'hours_val'); ?>><?php echo get_content('lien-he', 'hours_val', 'Thứ Hai – Thứ Sáu: 08:00 – 17:30'); ?></p>
                     </div>
                 </div>
 

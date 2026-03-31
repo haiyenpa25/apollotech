@@ -64,18 +64,18 @@ include 'includes/header.php';
 <!-- ================== PARTNERS ================== -->
 <section class="partners">
     <div class="container">
-        <p class="partners-label">Chúng tôi là nhà phân phối chính thức của sản phẩm Máy Phát Điện Vietgen, </br>Thang Máy Hyundai và Điều Hòa Không Khí LG.</p>
+        <p class="partners-label" <?php echo cms_attr('index', 'partners_label'); ?>><?php echo get_content('index', 'partners_label', 'Chúng tôi là nhà phân phối chính thức của sản phẩm Máy Phát Điện Vietgen, <br>Thang Máy Hyundai và Điều Hòa Không Khí LG.'); ?></p>
         <div class="partners-row">
             <div class="partner-logo partner-logo--lg">
-                <img src="<?php echo get_content('index', 'partner_1', 'https://apollotech.vn/wp-content/uploads/2026/01/Thiet-ke-chua-co-ten-1.png'); ?>" <?php echo cms_attr('index', 'partner_1'); ?> alt="Partner 1"
+                <img src="<?php echo get_content('index', 'partner_1', 'https://apollotech.vn/wp-content/uploads/2026/01/Thiet-ke-chua-co-ten-1.png'); ?>" <?php echo cms_img_attr('index', 'partner_1'); ?> alt="Partner 1"
                      onerror="this.onerror=null;this.src='https://apollotech.vn/wp-content/uploads/2026/01/Thiet-ke-chua-co-ten-1.png'">
             </div>
             <div class="partner-logo partner-logo--lg">
-                <img src="<?php echo get_content('index', 'partner_2', 'https://apollotech.vn/wp-content/uploads/2026/01/Thiet-ke-chua-co-ten-2.png'); ?>" <?php echo cms_attr('index', 'partner_2'); ?> alt="Partner 2"
+                <img src="<?php echo get_content('index', 'partner_2', 'https://apollotech.vn/wp-content/uploads/2026/01/Thiet-ke-chua-co-ten-2.png'); ?>" <?php echo cms_img_attr('index', 'partner_2'); ?> alt="Partner 2"
                      onerror="this.onerror=null;this.src='https://apollotech.vn/wp-content/uploads/2026/01/Thiet-ke-chua-co-ten-2.png'">
             </div>
             <div class="partner-logo partner-logo--lg">
-                <img src="<?php echo get_content('index', 'partner_3', 'https://apollotech.vn/wp-content/uploads/2026/01/3-3.png'); ?>" <?php echo cms_attr('index', 'partner_3'); ?> alt="Partner DZM"
+                <img src="<?php echo get_content('index', 'partner_3', 'https://apollotech.vn/wp-content/uploads/2026/01/3-3.png'); ?>" <?php echo cms_img_attr('index', 'partner_3'); ?> alt="Partner DZM"
                      onerror="this.onerror=null;this.src='https://apollotech.vn/wp-content/uploads/2026/01/3-3.png'">
             </div>
         </div>

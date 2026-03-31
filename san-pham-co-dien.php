@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+﻿<?php include 'includes/header.php'; ?>
 
 <!-- Page Hero -->
 <section class="page-hero">
@@ -9,7 +9,8 @@
             <span>Sản phẩm cơ điện</span>
         </nav>
         <h1 <?php echo cms_attr('san-pham-co-dien', 'hero_title'); ?>>
-            <?php echo get_content('san-pham-co-dien', 'hero_title', 'SẢN PHẨM <span>CƠ ĐIỆN</span>'); ?></h1>
+            <?php echo get_content('san-pham-co-dien', 'hero_title', 'SẢN PHẨM <span>CƠ ĐIỆN</span>'); ?>
+        </h1>
         <p <?php echo cms_attr('san-pham-co-dien', 'hero_desc'); ?>>
             <?php echo get_content('san-pham-co-dien', 'hero_desc', 'Apollo Technologies tự hào là đơn vị cung cấp chính hãng các sản phẩm Máy Phát Điện, Pin …'); ?>
         </p>
@@ -24,7 +25,7 @@
     <div class="container">
         <div class="product-category-header" style="text-align: center; margin-bottom: 40px;">
             <h2 style="font-size: 2rem; color: var(--c-navy);"><i class="fas fa-bolt"></i> <span>MÁY PHÁT ĐIỆN VIETGEN,
-                    PIN VIBAT, ATS & TỦ HÒA ĐỒNG BỘ</span></h2>
+                    ATS & TỦ HÒA ĐỒNG BỘ</span></h2>
             <p>Cung cấp và lắp đặt máy phát điện chính hãng, tủ chuyển đổi nguồn ATS</p>
         </div>
 
@@ -39,7 +40,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_1'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         ATS 825 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -62,7 +63,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_2'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Baudouin 1000/1100 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -89,7 +90,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_3'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Baudouin 1280/1410 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -116,7 +117,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_4'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Baudouin 1400/1540 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -143,7 +144,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_5'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Baudouin 1500/1650 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -171,7 +172,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_24'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Động Cơ 30 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -199,7 +200,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_25'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Động Cơ 20 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -227,7 +228,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_26'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Đầu Phát 31.3 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -253,7 +254,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_27'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Đầu Phát 20 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -279,7 +280,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_28'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Đầu Phát 13 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -305,7 +306,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_29'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Đầu Phát 11 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -331,7 +332,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_30'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Tủ Hòa Đồng Bộ 2640 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -353,7 +354,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_31'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Tủ Hòa Đồng Bộ 2112 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -377,7 +378,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_32'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Tủ Hòa Đồng Bộ 1650 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -401,7 +402,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_33'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         Tủ Hòa Đồng Bộ 1320 kVA</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -448,7 +449,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_6'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BA125 – Pin xe con hạng nhẹ</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -479,7 +480,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_7'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BA140 – Pin xe con máy xăng</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -510,7 +511,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_8'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BA160 – Pin xe con máy dầu</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -542,7 +543,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_9'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BA180 – Pin xe địa hình máy dầu</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -573,7 +574,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_10'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BA208 – Pin xe tải nhẹ</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -605,7 +606,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_11'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BA212 – Pin xe tải nặng, đầu kéo</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -637,7 +638,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_12'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BB140 – Pin xe điện Vinfast tăng cường 60Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -669,7 +670,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_13'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BB125 – Pin xe điện Vinfast tiêu chuẩn 45Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -701,7 +702,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_14'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BB115 – Pin xe điện Vinfast nhỏ 30Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -733,7 +734,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_15'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BP110: Pin xe máy 12.8V-4.8Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -764,7 +765,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_16'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BM105: Pin xe máy 4Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -795,7 +796,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_17'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BM120: Pin xe máy 16Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -827,7 +828,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_18'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BP106: Pin xe máy 12.8V-2.4Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -859,7 +860,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_19'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         PS140.15 – Pin xe dịch vụ máy xăng</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -891,7 +892,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_20'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BP115: Pin xe máy 12.8V-7.2Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -922,7 +923,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_21'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BM115: Pin xe máy 12Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -953,7 +954,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_22'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         BM110: Pin xe máy 8Ah</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -985,7 +986,7 @@
                         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
                 </div>
                 <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3
+                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_23'); ?>
                         style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
                         PS160.15 – Pin xe dịch vụ máy dầu</h3>
                     <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
@@ -1041,7 +1042,8 @@
 <section class="sol-cta">
     <div class="container">
         <h2 <?php echo cms_attr('san-pham-co-dien', 'cta_title'); ?>>
-            <?php echo get_content('san-pham-co-dien', 'cta_title', 'Cần báo giá thiết bị cơ điện?'); ?></h2>
+            <?php echo get_content('san-pham-co-dien', 'cta_title', 'Cần báo giá thiết bị cơ điện?'); ?>
+        </h2>
         <p <?php echo cms_attr('san-pham-co-dien', 'cta_desc'); ?>>
             <?php echo get_content('san-pham-co-dien', 'cta_desc', 'Apollo cung cấp thiết bị chính hãng, giao hàng toàn quốc, bảo hành đầy đủ và hỗ trợ lắp đặt chuyên nghiệp.'); ?>
         </p>

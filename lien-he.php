@@ -42,22 +42,26 @@ include 'includes/header.php';
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
                     <div class="ci-text">
-                        <h4>Số điện thoại</h4>
-                        <p><a href="tel:+84823436996">(+84) 82 343 6996</a></p>
+                        <h4 <?php echo cms_attr('lien-he', 'phone_title'); ?>><?php echo get_content('lien-he', 'phone_title', 'Số điện thoại'); ?></h4>
+                        <p><?php
+                            $phone = get_content('lien-he', 'phone_val', '(+84) 82 343 6996');
+                        ?><a href="tel:<?php echo preg_replace('/[^0-9+]/', '', strip_tags($phone)); ?>" <?php echo cms_attr('lien-he', 'phone_val'); ?>><?php echo $phone; ?></a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-envelope"></i></div>
                     <div class="ci-text">
-                        <h4>Email</h4>
-                        <p><a href="mailto:contact@apollotech.vn">contact@apollotech.vn</a></p>
+                        <h4 <?php echo cms_attr('lien-he', 'email_title'); ?>><?php echo get_content('lien-he', 'email_title', 'Email'); ?></h4>
+                        <p><?php
+                            $email = get_content('lien-he', 'email_val', 'contact@apollotech.vn');
+                        ?><a href="mailto:<?php echo strip_tags($email); ?>" <?php echo cms_attr('lien-he', 'email_val'); ?>><?php echo $email; ?></a></p>
                     </div>
                 </div>
                 <div class="contact-info-item">
                     <div class="ci-icon"><i class="fas fa-clock"></i></div>
                     <div class="ci-text">
-                        <h4>Giờ làm việc</h4>
-                        <p>Thứ Hai – Thứ Sáu: 08:00 – 17:00</p>
+                        <h4 <?php echo cms_attr('lien-he', 'hours_title'); ?>><?php echo get_content('lien-he', 'hours_title', 'Giờ làm việc'); ?></h4>
+                        <p <?php echo cms_attr('lien-he', 'hours_val'); ?>><?php echo get_content('lien-he', 'hours_val', 'Thứ Hai – Thứ Sáu: 08:00 – 17:00'); ?></p>
                     </div>
                 </div>
 
