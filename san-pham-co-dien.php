@@ -107,13 +107,7 @@
         </div>
         <?php endforeach; ?>
 
-        <div style="text-align:center;margin-top:28px;">
-            <a href="https://dzima.com/product_cat/may-phat-dien/" target="_blank" rel="noopener"
-                style="display:inline-flex;align-items:center;gap:8px;padding:11px 28px;border-radius:25px;background:#13386D;color:#fff;font-weight:600;text-decoration:none;font-size:0.9rem;transition:opacity 0.2s;"
-                onmouseover="this.style.opacity='.82';" onmouseout="this.style.opacity='1';">
-                <i class="fas fa-external-link-alt"></i> Xem to&#224;n b&#7897; catalog t&#7841;i DZI An
-            </a>
-        </div>
+
     </div>
 </section>
 
@@ -132,610 +126,118 @@ function switchMPD(tab, btn) {
 <!-- Danh mục: PIN VIBAT -->
 <section style="background:var(--c-surface); padding:64px 0;">
     <div class="container">
-        <div class="product-category-header" style="text-align: center; margin-bottom: 40px;">
-            <h2 style="font-size: 2rem; color: var(--c-navy);"><i class="fas fa-car-battery"></i> <span>PIN VIBAT</span>
-            </h2>
-            <p>Pin xe các loại, đảm bảo nguồn điện liên tục cho phương tiện của bạn.</p>
+        <div class="product-category-header" style="text-align:center; margin-bottom:32px;">
+            <h2 style="font-size:2rem;color:var(--c-navy);"><i class="fas fa-car-battery"></i> <span>PIN VIBAT</span></h2>
+            <p>Pin LiFePO4 ch&#237;nh h&#227;ng VIBAT &#8211; &#273;&#7843;m b&#7843;o ngu&#7891;n &#273;i&#7879;n &#7893;n &#273;&#7883;nh cho m&#7885;i ph&#432;&#417;ng ti&#7879;n.</p>
         </div>
 
-        <div class="product-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; align-items: stretch; margin-bottom: 40px;">
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_6', 'https://apollotech.vn/wp-content/uploads/2026/02/BA125-adv01-600x600-1.png'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_6'); ?> alt="BA125 – Pin xe con hạng nhẹ"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_6'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BA125 – Pin xe con hạng nhẹ</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BA125
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            200A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 60Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            200x130x220mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_7', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA140-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_7'); ?> alt="BA140 – Pin xe con máy xăng"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_7'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BA140 – Pin xe con máy xăng</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BA140
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            320A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 45Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong> 200 x
-                            130 x 220mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_8', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA160-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_8'); ?> alt="BA160 – Pin xe con máy dầu"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_8'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BA160 – Pin xe con máy dầu</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BA160
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            480A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 70Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            208x175x190mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_9', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA180-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_9'); ?>
-                        alt="BA180 – Pin xe địa hình máy dầu"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_9'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BA180 – Pin xe địa hình máy dầu</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BA180
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            640A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 95Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            280x175x190mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_10', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA180-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_10'); ?> alt="BA208 – Pin xe tải nhẹ"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_10'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BA208 – Pin xe tải nhẹ</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BA208
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 25.6V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            320A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 45Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            280x175x190mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_11', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BP212-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_11'); ?>
-                        alt="BA212 – Pin xe tải nặng, đầu kéo"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_11'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BA212 – Pin xe tải nặng, đầu kéo</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BA212
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 25.6V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            480A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 70Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            295x200x225mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_12', 'https://apollotech.vn/wp-content/uploads/2026/02/logo-VIBAT-600x575-1.png'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_12'); ?>
-                        alt="BB140 – Pin xe điện Vinfast tăng cường 60Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_12'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BB140 – Pin xe điện Vinfast tăng cường 60Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BB140
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.0V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            240A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 60Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong> 200 x
-                            130 x 220mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_13', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BB125-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_13'); ?>
-                        alt="BB125 – Pin xe điện Vinfast tiêu chuẩn 45Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_13'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BB125 – Pin xe điện Vinfast tiêu chuẩn 45Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BB125
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.0V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            200A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 45Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong> 165 x
-                            125 x 175mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="1"
-                style="display: flex; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_14', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BB125-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_14'); ?>
-                        alt="BB115 – Pin xe điện Vinfast nhỏ 30Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_14'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BB115 – Pin xe điện Vinfast nhỏ 30Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BB115
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.0V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            120A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 30Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong> 165 x
-                            125 x 175mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_15', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_15'); ?>
-                        alt="BP110: Pin xe máy 12.8V-4.8Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_15'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BP110: Pin xe máy 12.8V-4.8Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BP110
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp danh
-                                nghĩa:</strong> 12.8V</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            80A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 4.8Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            112x70x106mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_16', 'https://apollotech.vn/wp-content/uploads/2026/02/BPS106-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_16'); ?> alt="BM105: Pin xe máy 4Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_16'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BM105: Pin xe máy 4Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BM105
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 11.1V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            50A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 4.0Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            112x70x88</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_17', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_17'); ?> alt="BM120: Pin xe máy 16Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_17'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BM120: Pin xe máy 16Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BM120
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 11.1V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            150A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 16Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            112x70x106mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_18', 'https://apollotech.vn/wp-content/uploads/2026/02/BP106-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_18'); ?>
-                        alt="BP106: Pin xe máy 12.8V-2.4Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_18'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BP106: Pin xe máy 12.8V-2.4Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BP106
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            50A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 2.4Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong> BP106
-                            là 112x70x88mm/ BP106H là 120x60x130mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_19', 'https://apollotech.vn/wp-content/uploads/2026/02/logo-VIBAT-600x575-1.png'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_19'); ?>
-                        alt="PS140.15 – Pin xe dịch vụ máy xăng"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_19'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        PS140.15 – Pin xe dịch vụ máy xăng</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> PS140.15
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            320A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 120Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            280x175x190mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_20', 'https://apollotech.vn/wp-content/uploads/2026/02/BP115-adv02-600x600-1.png'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_20'); ?>
-                        alt="BP115: Pin xe máy 12.8V-7.2Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_20'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BP115: Pin xe máy 12.8V-7.2Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BP115
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            120A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 7.2Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            150x87x93mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_21', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_21'); ?> alt="BM115: Pin xe máy 12Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_21'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BM115: Pin xe máy 12Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BM115
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp danh
-                                nghĩa:</strong> 11.1V</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            120A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 12Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            112x70x106mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_22', 'https://apollotech.vn/wp-content/uploads/2026/02/BP110-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_22'); ?> alt="BM110: Pin xe máy 8Ah"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_22'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        BM110: Pin xe máy 8Ah</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> BM110
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 11.1V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            80A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 8.0Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong> BM110
-                            là 112x70x110mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
-            <div class="product-card item-bat" data-page="2"
-                style="display: none; flex-direction: column; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; border: 1px solid #eee; height: 100%;">
-                <div class="pc-img" style="position: relative; width: 100%; padding-top: 100%; background: #fff;">
-                    <img src="<?php echo get_content('san-pham-co-dien', 'prod_img_23', 'https://apollotech.vn/wp-content/uploads/2026/02/Hinh-dai-dien-BA160-600x600-1.jpg'); ?>"
-                        <?php echo cms_img_attr('san-pham-co-dien', 'prod_img_23'); ?>
-                        alt="PS160.15 – Pin xe dịch vụ máy dầu"
-                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 10px;">
-                </div>
-                <div class="pc-body" style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1;">
-                    <h3 <?php echo cms_attr('san-pham-co-dien', 'prod_name_23'); ?>
-                        style="font-size: 1.1rem; color: #13386D; margin-bottom: 15px; font-weight: 600; line-height: 1.4;">
-                        PS160.15 – Pin xe dịch vụ máy dầu</h3>
-                    <div class="pc-spec" style="flex-grow: 1; margin-bottom: 20px;">
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Model:</strong> PS160.15
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Điện áp:</strong> 12.8V
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dòng khởi động:</strong>
-                            480A</div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Dung lượng:</strong> 120Ah
-                        </div>
-                        <div style="font-size:0.9rem; color:#555; margin-bottom:4px;"><strong>Kích thước:</strong>
-                            280x175x190mm</div>
-
-                    </div>
-                    <a href="<?php echo SITE; ?>/lien-he.php" class="btn btn-outline"
-                        style="text-align: center; width: 100%; padding: 10px; border-radius: 6px; color: #0066CC; border: 1px solid #0066CC; font-weight: 500; text-decoration: none; transition: all 0.3s; display: block; margin-top: auto;">
-                        <i class="fas fa-phone-alt"></i> Liên hệ báo giá
-                    </a>
-                </div>
-            </div>
-
+        <!-- Tab filter 6 loai -->
+        <div style="display:flex;justify-content:center;gap:8px;margin-bottom:36px;flex-wrap:wrap;">
+            <button onclick="switchPIN('oto',this)" id="ptab-oto"
+                style="padding:9px 20px;border-radius:25px;border:2px solid #13386D;background:#13386D;color:#fff;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.25s;">Pin &#244; t&#244; &#273;i&#7879;n</button>
+            <button onclick="switchPIN('xemay',this)" id="ptab-xemay"
+                style="padding:9px 20px;border-radius:25px;border:2px solid #13386D;background:#fff;color:#13386D;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.25s;">Pin xe m&#225;y</button>
+            <button onclick="switchPIN('xecon',this)" id="ptab-xecon"
+                style="padding:9px 20px;border-radius:25px;border:2px solid #13386D;background:#fff;color:#13386D;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.25s;">Pin xe con</button>
+            <button onclick="switchPIN('xetai',this)" id="ptab-xetai"
+                style="padding:9px 20px;border-radius:25px;border:2px solid #13386D;background:#fff;color:#13386D;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.25s;">Pin xe t&#7843;i</button>
+            <button onclick="switchPIN('congtrinh',this)" id="ptab-congtrinh"
+                style="padding:9px 20px;border-radius:25px;border:2px solid #13386D;background:#fff;color:#13386D;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.25s;">Pin xe c&#244;ng tr&#236;nh</button>
+            <button onclick="switchPIN('luutru',this)" id="ptab-luutru"
+                style="padding:9px 20px;border-radius:25px;border:2px solid #13386D;background:#fff;color:#13386D;font-weight:600;cursor:pointer;font-size:0.85rem;transition:all 0.25s;">Pin l&#432;u tr&#7919;</button>
         </div>
 
-        <!-- Pagination UI -->
-        <div class="product-pagination"
-            style="display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 0.95rem; color: #666;">
-            <button class="pp-btn active" onclick="changePage('bat', 1, this)">1</button>
-            <button class="pp-btn " onclick="changePage('bat', 2, this)">2</button>
+        <?php
+        $pcs  = 'display:flex;flex-direction:column;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,0.07);border:1px solid #eee;height:100%;transition:transform 0.3s,box-shadow 0.3s;';
+        $piw  = 'position:relative;width:100%;padding-top:100%;background:#f0f4f8;';
+        $pis  = 'position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;padding:16px;';
+        $pbs  = 'padding:18px;display:flex;flex-direction:column;flex-grow:1;';
+        $phs  = 'font-size:1rem;color:#13386D;margin-bottom:10px;font-weight:700;line-height:1.4;';
+        $prs  = 'font-size:0.83rem;color:#555;margin-bottom:3px;';
+        $pbtnS= 'text-align:center;width:100%;padding:10px;border-radius:6px;color:#0066CC;border:1.5px solid #0066CC;font-weight:500;text-decoration:none;display:block;margin-top:auto;transition:all 0.3s;';
+        $VB   = 'https://vibatco.com/wp-content/uploads/';
 
+        $pinData = [
+            'oto' => [
+                ['name'=>'BB115 &#8211; Pin xe &#273;i&#7879;n Vinfast nh&#7887; 30Ah','model'=>'BB115','voltage'=>'12.8V','cap'=>'30Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BB115-300x300.jpg'],
+                ['name'=>'BB125 &#8211; Pin xe &#273;i&#7879;n Vinfast ti&#234;u chu&#7849;n 45Ah','model'=>'BB125','voltage'=>'12.8V','cap'=>'45Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BB125-300x300.jpg'],
+                ['name'=>'BB140 &#8211; Pin xe &#273;i&#7879;n Vinfast t&#259;ng c&#432;&#7901;ng 60Ah','model'=>'BB140','voltage'=>'12.0V','cap'=>'60Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BB125-300x300.jpg'],
+            ],
+            'xemay' => [
+                ['name'=>'BM105: Pin xe m&#225;y 4Ah', 'model'=>'BM105','voltage'=>'11.1V','cap'=>'4Ah', 'img'=>$VB.'2025/02/BPS106-300x300.jpg'],
+                ['name'=>'BM110: Pin xe m&#225;y 8Ah', 'model'=>'BM110','voltage'=>'11.1V','cap'=>'8Ah', 'img'=>$VB.'2025/02/BP110-300x300.jpg'],
+                ['name'=>'BM115: Pin xe m&#225;y 12Ah','model'=>'BM115','voltage'=>'11.1V','cap'=>'12Ah','img'=>$VB.'2025/02/BP115-adv02-300x300.png'],
+                ['name'=>'BM120: Pin xe m&#225;y 16Ah','model'=>'BM120','voltage'=>'11.1V','cap'=>'16Ah','img'=>$VB.'2025/02/BP106-300x300.jpg'],
+            ],
+            'xecon' => [
+                ['name'=>'BA125 &#8211; Pin xe con h&#7841;ng nh&#7865;',    'model'=>'BA125','voltage'=>'12.8V','cap'=>'60Ah', 'img'=>$VB.'2025/02/BA125-adv01-300x300.png'],
+                ['name'=>'BA140 &#8211; Pin xe con m&#225;y x&#259;ng',      'model'=>'BA140','voltage'=>'12.8V','cap'=>'45Ah', 'img'=>$VB.'2025/09/Hinh-dai-dien-BA140-300x300.jpg'],
+                ['name'=>'BA160 &#8211; Pin xe con m&#225;y d&#7847;u',      'model'=>'BA160','voltage'=>'12.8V','cap'=>'70Ah', 'img'=>$VB.'2025/09/Hinh-dai-dien-BA160-300x300.jpg'],
+                ['name'=>'BA180 &#8211; Pin xe &#273;&#7883;a h&#236;nh m&#225;y d&#7847;u','model'=>'BA180','voltage'=>'12.8V','cap'=>'95Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BA180-300x300.jpg'],
+            ],
+            'xetai' => [
+                ['name'=>'BA208 &#8211; Pin xe t&#7843;i nh&#7865;',                       'model'=>'BA208',   'voltage'=>'25.6V','cap'=>'45Ah', 'img'=>$VB.'2025/09/Hinh-dai-dien-BA180-300x300.jpg'],
+                ['name'=>'BA212 &#8211; Pin xe t&#7843;i n&#7863;ng, &#273;&#7847;u k&#233;o','model'=>'BA212','voltage'=>'25.6V','cap'=>'70Ah', 'img'=>$VB.'2025/09/Hinh-dai-dien-BP212-300x300.jpg'],
+                ['name'=>'PS180.36 &#8211; Pin &#273;&#7847;u k&#233;o g&#7855;n m&#225;y l&#7841;nh DC','model'=>'PS180.36','voltage'=>'36V','cap'=>'180Ah','img'=>$VB.'2025/09/Hinh-dai-dien-PS212-300x300.jpg'],
+                ['name'=>'PS212.36 &#8211; Pin xe t&#7843;i g&#7855;n m&#225;y l&#7841;nh DC','model'=>'PS212.36','voltage'=>'36V','cap'=>'212Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BP212-300x300.jpg'],
+            ],
+            'congtrinh' => [
+                ['name'=>'BP125 &#8211; Pin xe c&#244;ng tr&#236;nh 125Ah','model'=>'BP125','voltage'=>'12.8V','cap'=>'125Ah','img'=>$VB.'2025/02/BA125-adv02-300x300.png'],
+                ['name'=>'BP140 &#8211; Pin xe c&#244;ng tr&#236;nh 140Ah','model'=>'BP140','voltage'=>'12.8V','cap'=>'140Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BP140-300x300.jpg'],
+                ['name'=>'BP160 &#8211; Pin xe c&#244;ng tr&#236;nh 160Ah','model'=>'BP160','voltage'=>'12.8V','cap'=>'160Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BP212-300x300.jpg'],
+                ['name'=>'BP208 &#8211; Pin m&#225;y x&#226;y d&#7921;ng, m&#225;y ph&#225;t 200kVA','model'=>'BP208','voltage'=>'25.6V','cap'=>'200Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BP208-300x300.jpg'],
+            ],
+            'luutru' => [
+                ['name'=>'BS2002 &#8211; Pin l&#432;u tr&#7919; c&#7917;a cu&#7889;n','model'=>'BS2002','voltage'=>'12.8V','cap'=>'20Ah', 'img'=>$VB.'2025/09/Hinh-dai-dien-BS2002-300x300.jpg'],
+                ['name'=>'BS401 &#8211; Pin xe &#273;&#7841;p &#273;i&#7879;n',          'model'=>'BS401', 'voltage'=>'48V',  'cap'=>'10Ah', 'img'=>$VB.'2024/11/logo-VIBAT-300x287.png'],
+                ['name'=>'BS501 &#8211; Pin xe &#273;ua go-kart',                        'model'=>'BS501', 'voltage'=>'51.2V','cap'=>'20Ah', 'img'=>$VB.'2025/09/Hinh-dai-dien-BS501-300x300.jpg'],
+                ['name'=>'BS202 &#8211; Pin xe golf-cart',                               'model'=>'BS202', 'voltage'=>'25.6V','cap'=>'200Ah','img'=>$VB.'2025/09/Hinh-dai-dien-BS202-300x300.jpg'],
+            ],
+        ];
+
+        foreach ($pinData as $tab => $items):
+        ?>
+        <div id="ppanel-<?php echo $tab; ?>" style="<?php echo ($tab !== 'oto') ? 'display:none;' : ''; ?>">
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;align-items:stretch;">
+                <?php foreach ($items as $p): ?>
+                <div style="<?php echo $pcs; ?>"
+                    onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,0.13)';"
+                    onmouseout="this.style.transform='';this.style.boxShadow='0 4px 18px rgba(0,0,0,0.07)';">
+                    <div style="<?php echo $piw; ?>">
+                        <img src="<?php echo $p['img']; ?>" alt="<?php echo $p['name']; ?>"
+                            style="<?php echo $pis; ?>" loading="lazy"
+                            onerror="this.src='https://vibatco.com/wp-content/uploads/2024/11/logo-VIBAT-300x287.png'">
+                    </div>
+                    <div style="<?php echo $pbs; ?>">
+                        <h3 style="<?php echo $phs; ?>"><?php echo $p['name']; ?></h3>
+                        <div style="flex-grow:1;margin-bottom:14px;">
+                            <div style="<?php echo $prs; ?>"><strong>Model:</strong> <?php echo $p['model']; ?></div>
+                            <div style="<?php echo $prs; ?>"><strong>&#272;i&#7879;n &#225;p:</strong> <?php echo $p['voltage']; ?></div>
+                            <div style="<?php echo $prs; ?>"><strong>Dung l&#432;&#7907;ng:</strong> <?php echo $p['cap']; ?></div>
+                        </div>
+                        <a href="<?php echo SITE; ?>/lien-he.php" style="<?php echo $pbtnS; ?>"
+                            onmouseover="this.style.background='#0066CC';this.style.color='#fff';"
+                            onmouseout="this.style.background='';this.style.color='#0066CC';">
+                            <i class="fas fa-phone-alt"></i> Li&#234;n h&#7879; b&#225;o gi&#225;
+                        </a>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
         </div>
+        <?php endforeach; ?>
     </div>
 </section>
 
 <script>
-    function changePage(cat_id, page, btn) {
-        // Hide all items in category
-        document.querySelectorAll('.item-' + cat_id).forEach(el => {
-            el.style.display = 'none';
-        });
-        // Show only the requested page
-        document.querySelectorAll('.item-' + cat_id + '[data-page="' + page + '"]').forEach(el => {
-            el.style.display = 'flex';
-        });
-        // Update active state on buttons
-        let parent = btn.parentNode;
-        parent.querySelectorAll('.pp-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-    }
+function switchPIN(tab, btn) {
+    document.querySelectorAll('[id^="ppanel-"]').forEach(function(p) { p.style.display = 'none'; });
+    document.querySelectorAll('[id^="ptab-"]').forEach(function(t) { t.style.background = '#fff'; t.style.color = '#13386D'; });
+    var panel = document.getElementById('ppanel-' + tab);
+    if (panel) panel.style.display = 'block';
+    btn.style.background = '#13386D';
+    btn.style.color = '#fff';
+}
 </script>
 
 <!-- CTA -->
