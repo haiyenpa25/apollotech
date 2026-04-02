@@ -1,47 +1,38 @@
 <?php
 // One-time fix script for broken images on production
-// Fixes: partner logos + solution image that were stored in DB pointing to demo.apollotech.vn
-// After running, DELETE this file from server
+// Loads DB credentials from the existing admin/db.php which has correct production creds
+// After running successfully, DELETE this file from server for security
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'demo_apollotech');
-define('DB_USER', 'demo_demoa3433');
-define('DB_PASS', 'Abc.1234');
-define('DB_CHARSET', 'utf8mb4');
+// Load production DB credentials (this file exists on server and has correct creds)
+require_once __DIR__ . '/admin/db.php';
 
 try {
-    $pdo = new PDO(
-        "mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=".DB_CHARSET,
-        DB_USER, DB_PASS,
-        [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
-    );
+    $pdo = get_db();
+    if (!$pdo) throw new Exception('get_db() returned null');
 } catch (Exception $e) {
-    die('DB Error: ' . $e->getMessage());
+    die(json_encode(['error' => $e->getMessage(), 'step' => 'connection']));
 }
 
 $log = [];
 
-// 1. Show all broken rows (URL contains demo.apollotech.vn)
+// 1. Show all rows with demo.apollotech.vn URLs
 $stmt = $pdo->query("SELECT page, key_name, lang, SUBSTRING(value,1,200) v 
                      FROM cms_contents 
                      WHERE value LIKE '%demo.apollotech%' 
-                     ORDER BY page, key_name");
-$log['broken_rows_found'] = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                     ORDER BY page, key_name, lang");
+$log['broken_rows'] = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$log['broken_count'] = count($log['broken_rows']);
 
-// 2. Delete all rows with demo.apollotech.vn URLs
-// PHP fallbacks (in index.php defaults) will take over
-$n_del = $pdo->exec("DELETE FROM cms_contents WHERE value LIKE '%demo.apollotech%'");
-$log['rows_deleted'] = $n_del;
+// 2. DELETE all rows with demo subdomain URLs (PHP defaults will take over)
+$n = $pdo->exec("DELETE FROM cms_contents WHERE value LIKE '%demo.apollotech%'");
+$log['deleted'] = $n;
 
-// 3. Also check for sol_preview_img - if missing or wrong, it shows blank space
+// 3. Show remaining partner/sol rows
 $stmt2 = $pdo->query("SELECT page, key_name, lang, SUBSTRING(value,1,200) v 
                       FROM cms_contents 
-                      WHERE page='index' AND key_name IN ('sol_preview_img','partner_1','partner_2','partner_3')");
-$log['remaining'] = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+                      WHERE page='index' ORDER BY key_name, lang");
+$log['remaining_index'] = $stmt2->fetchAll(PDO::FETCH_ASSOC);
 
-// 4. Total index rows for context
-$log['total_index_rows'] = $pdo->query("SELECT COUNT(*) FROM cms_contents WHERE page='index'")->fetchColumn();
-
-$log['status'] = 'DONE';
-header('Content-Type: application/json');
+$log['status'] = 'SUCCESS';
+header('Content-Type: application/json; charset=utf-8');
 echo json_encode($log, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
